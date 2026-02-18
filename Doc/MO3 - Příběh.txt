@@ -1,0 +1,873 @@
+﻿Mlžné Ostrovy III – Podklady pro organizátory
+📖 Základní koncept světa
+Po událostech druhého běhu se hra Mlžných Ostrovů přesouvá do nového kontinentu – země plné bouří, pralesů a prastarých ruin, známé pracovně jako Kheledora.
+Před stvořením světa, tak jak ho známe, obýval univerzum bytosti dnes nazývané Prastaří. Jednalo se o racionální rasu, která během své existence postupně překonala téměř všechny představitelné limity. Jejich technologická pokročilost se jim stala osudnou, když během experimentu, ve snaze neustále poznat více a více ze světa, protrhli bariéru mezi známým univerzem a primordiálním mořem chaosu. Energie chaosu zachvátila stvoření, začala ohýbat pravidla reality, devastovat existenci a postupně likvidovat Prastaré.
+Navzdory veškeré jejich snaze se Prastarým nepodařilo chaos porazit a v zoufalém pokusu přetvořili samotný základ reality. Z této jejich snahy vzešel svět s fyzikou a pravidly tak, jak ho známe dnes. Vznikl shluk sfér plující v primordiálním moři chaosu s mystickou „maintenance“ sférou černého plamene uprostřed, která cyklicky vytváří z chaosu duše bytostí sfér a část z nich poté zpět konzumuje k udržení řádu.
+Tento tah sice vytvořil v primordiálním chaosu ostrov reality, kde panuje řád, ale nová pravidla reality se ukázala nekompatibilní s Prastarými a jejich civilizací. Prastaří ze světa tak zmizeli a zanechali po sobě ruiny. Některé ruiny byly zasaženy změnou reality jen lehce, a jsou tak „funkční“, některé byly poznamenány těžce, a pro obyvatele světa je tak nerozluštitelným mystériem, k čemu vůbec kdy sloužily.
+Náš příběh se odehrává v Materiální sféře tohoto univerza tisíce let po jejím stvoření. Kontinent Kheledora byl dříve jakýmsi arboretem Prastarých, řízeným umělou inteligencí spravující jeho prosperitu. Stvoření sfér tato inteligence sice přežila, ale byla těžce poškozená. Během tisíciletí se jí podařilo napojit se na geologický zdroj energie pod zemí a na geomantická vlákna procházející kontinentem a jeho okolím. Stále pokračovala v direktivě Prastarých – kultivovat život na ostrovech. Inteligence neměla jak komunikovat či přímo konat jinak než skrze obecné geomantické fenomény, typu zemětřesení, zahřívání oblasti, déšť atd. Postupně inteligence kultivovala různé formy inteligentních ras, které začaly ostrovy obývat a inteligenci uctívat jako své mysteriózní animistické božstvo – Srdce Kheledory.
+________________
+
+
+  ________________
+🗺️ Regionální přehled světa Mlžných ostrovů
+Region
+	Charakter
+	Hlavní frakce
+	Typické zdroje
+	Typický problém
+	Western Plains
+	Úrodné pláně, řeky, vinohrady a rytířská města. Na jihu vyprahlejší.
+	Elyndar, Aurumbræ, Ordo Solis
+	Jídlo, Nástroje, Pracovní síla
+	Zarůstající lesy, mor plodin, blight z podzemí.
+	Archipelagos
+	Ostrovy, korálové útesy, přístavy a pirátská hnízda.
+	Shoal, Rudá Flotila
+	Lodě, Zlato, Magická tekutina
+	Mořští titáni, bouře, duchové ztroskotanců.
+	Inner Sea
+	Obchodní tepna světa, plná flotil, ruin a opuštěných podmořských chrámů. (sem asi GM island :D )
+	S.O.S., Kame no Kaizoku
+	Lodě, Magická tekutina, Luxusní zboží
+	Ožívající vraky, ztracené karavany, magické proudy.
+	Eastern Forges
+	Sopečné hory, doly, dým a démonické kovárny.
+	Mar’Rhazûn
+	Železo, Nástroje, Magické předměty
+	Živá láva, kovová zvířata, výbuchy šachet.
+	Southern Jungles
+	Tropické řeky, krvavé chrámy, obětiny a zlaté ruiny.
+	Taznar, Malvethar
+	Magická tekutina, Dřevo, Pracovní síla
+	Vzteklé rostliny, živé liány, démonická fauna.
+	Northern Highlands
+	Hory, kláštery, věže a údolí plná blesků.
+	Qal Asar, Ooruun
+	Magické předměty, Kouzelníci, Vojáci
+	Bouře, duchové oblaků, ztracené světelné stroje.
+	Storm Peaks
+	Nejvyšší hory kontinentu, věčně zahalené hromy.
+	Ael’thuun, Dracogallus
+	Magické předměty, Magická tekutina, Luxusní zboží
+	Bleskové bouře, praskající brány do jiných světů.
+	________________
+
+
+________________
+⚙️ Struktura světa
+* Západ (Western Plains) – řemesla, rytířské říše, zemědělská základna.
+
+* Jih (Southern Jungles) – chaos, krev, zlato a démoni.
+
+* Východ (Eastern Forges) – průmysl, trpasličí chamtivost, živé kovy.
+
+* Sever (Highlands & Storm Peaks) – magie, víra, blesky a staré božstvo.
+
+* Střed (Inner Sea) – hlavní osa obchodu a konfliktu.
+
+* Západní moře (Archipelagos) – piráti, korzáři, Shoal a nekromanti.
+
+________________
+
+
+📈 Herní rámec
+   * Každý region: cca 12 měst (celkem cca 80).
+
+   * Každé město produkuje 3 různé suroviny.
+
+   * Suroviny se obchodují nebo dobývají pouze po propojených cestách (po moři nebo po zemi). 
+      * Pro vazalizaci je třeba si udělat “okupovanou” cestičku až do hlavního města.
+
+         * Krize se střídají mezi regiony + finální rozuzlení.
+________________
+
+
+Města
+1 Ael’Khar
+Kráterové město alchymie
+Železo, Pracovní Síla, Nástroje
+
+
+2 Ael’Myr
+Přístav na řetězech mraků
+Pracovní Síla, Magické předměty, Lodě
+
+
+3 Ael’Nora
+Útesová svatyně bouře
+Magická tekutina, Luxusní zboží, Učenci
+
+
+4 Arveliss
+Přístav temných elfů
+Luxusní zboží, Magické předměty, Lodě
+
+
+5 Aurum’Mar
+Přístav alchymistů a cechů
+Jídlo, Dřevo, Magická tekutina
+
+
+6 Brevorn
+Tržiště a karavanní uzel
+Železo, Pracovní Síla, Nástroje
+
+
+7 Brána Elyndaru
+Rytířský přístav královských karavel
+Jídlo, Lodě, Branci
+
+
+8 Brána Slunce
+Poutní chrám řádu Solis
+Jídlo, Nástroje, Branci
+
+
+9 Cindrath
+Kovárny blesku a ohně
+Železo, Magická tekutina, Nástroje
+
+
+10 Dor’Qal
+Dolní věž magie a kamene
+Magická tekutina, Luxusní zboží, Učenci
+
+
+11 Durr’Itar
+Chrám hromu a větru
+Zlato, Magická tekutina, Luxusní zboží
+
+
+12 Dur’Varr
+Svatyně ohně a země
+Železo, Magická tekutina, Pracovní Síla
+
+
+13 Feralis
+Elfská obchodní enkláva
+Luxusní zboží, Magické předměty, Lodě
+
+
+14 Fulminar
+Jižní brána a pevnost
+Nástroje, Magické předměty, Branci
+
+
+15 Harkanar
+Upírský přístav z černého železa
+Zlato, Luxusní zboží, Lodě
+
+
+16 Hono’Grav
+Potopené město duchů moře
+Jídlo, Magická tekutina, Luxusní zboží
+
+
+17 Hvězdný dvůr
+Severní klášter a tvrz
+Jídlo, Magická tekutina, Branci
+
+
+18 Kaizoku Tetsu
+Nipponská kolonie a doky
+Magické předměty, Lodě, Branci
+
+
+19 Kaizoku no Shima
+Pevnost Nipponských korzárů
+Nástroje, Lodě, Branci
+
+
+20 Kalynar
+Město diplomatů a mágů
+Jídlo, Luxusní zboží, Učenci
+
+
+21 Karth Anbar
+Jižní průsmyk a pevnost
+Železo, Pracovní Síla, Nástroje
+
+
+22 Karthaal
+Výspa kovu a dýmu
+Železo, Pracovní Síla, Nástroje
+
+
+23 Kar’Rhaz
+Jižní chrám démonické země
+Dřevo, Magická tekutina, Pracovní Síla
+
+
+24 Kharr’Ven
+Pohraniční pevnost
+Jídlo, Nástroje, Branci
+
+
+25 Khar’Vel
+Ostrov černého písku a krve
+Zlato, Magická tekutina, Lodě
+
+
+26 Khol’dar
+Chrám ohně a výhně
+Železo, Zlato, Magické předměty
+
+
+27 Khorr Dunn
+Kamenný klášter v útesu
+Dřevo, Nástroje, Učenci
+
+
+28 Lan’Tor
+Přístav svítících korálových luceren
+Jídlo, Magická tekutina, Pracovní Síla
+
+
+29 Lysara
+Srdce Obchodu
+Zlato, Luxusní zboží, Lodě
+
+
+30 Miradel
+Tržiště otroků a zboží
+Pracovní Síla, Luxusní zboží, Lodě
+
+
+31 Morvayn
+Labyrint vraků a kostí
+Zlato, Magická tekutina, Lodě
+
+
+32 Most Úsvitu
+Město na zlaté řece
+Jídlo, Nástroje, Luxusní zboží
+
+
+33 Oor'Duun
+Město v sopečném údolí
+Jídlo, Železo, Nástroje
+
+
+34 Oor’Dhal
+Klášter kamenopěvců
+Luxusní zboží, Branci, Učenci
+
+
+35 Oor’Marn
+Klášter poutníků
+Dřevo, Pracovní Síla, Nástroje
+
+
+36 Oor’Shael
+Mlžné údolí
+Jídlo, Nástroje, Branci
+
+
+37 Orelmar
+Jižní maják světa
+Magická tekutina, Nástroje, Lodě
+
+
+38 Port Asari
+Koloniální přístav učenců
+Luxusní zboží, Lodě, Učenci
+
+
+39 Portis
+Kovový přístav draků
+Železo, Magická tekutina, Lodě
+
+
+40 Přístav Slunce
+Poutní město řádu Ordo Solis
+Jídlo, Luxusní zboží, Branci
+
+
+41 Qal Nura
+Observatoř duchů bouře
+Luxusní zboží, Magické předměty, Učenci
+
+
+42 Qal Velis
+Brána Blesků
+Magická tekutina, Magické předměty, Lodě
+
+
+43 Qal’Solyn
+Věž magie a ohně
+Magická tekutina, Magické předměty, Učenci
+
+
+44 Qual Eren
+Věž zemské magie
+Nástroje, Magické předměty, Učenci
+
+
+45 Rhaz’Isle
+Ostrov krve a popela
+Zlato, Nástroje, Lodě
+
+
+46 Rhaz’Mor
+Výhně démonů a kamene
+Železo, Zlato, Nástroje
+
+
+47 Rhaz’Port
+Přístav žhavých lodí
+Železo, Pracovní Síla, Lodě
+
+
+48 Rhyn’Kala
+Perlová laguna zrcadel
+Jídlo, Magická tekutina, Luxusní zboží
+
+
+49 Rudý pohár
+Krčma na konci světa
+Zlato, Luxusní zboží, Lodě
+
+
+50 Ryn’Thal
+Klášter větrů a zpěvu
+Luxusní zboží, Magické předměty, Učenci
+
+
+51 Shiro’Ventar
+Bílá pevnost pod útesy
+Magická tekutina, Nástroje, Lodě
+
+
+52 Stříbrné údolí
+Úrodné vinice a trhy
+Jídlo, Dřevo, Pracovní Síla
+
+
+53 Tatsu’Kai
+Pevnost dračího klanu
+Železo, Magické předměty, Lodě
+
+
+54 Taz’Maru
+Město přízraků
+Dřevo, Pracovní Síla, Branci
+
+
+55 Thal’Myrr
+Půlpotopené pirátské město
+Zlato, Magické předměty, Lodě
+
+
+56 Tharln Mor
+Údolí soch a dolů
+Železo, Nástroje, Branci
+
+
+57 Tharn
+Zemědělské město s duší
+Jídlo, Dřevo, Pracovní Síla
+
+
+58 Tharn’Kor
+Doly nad propastí
+Železo, Pracovní Síla, Nástroje
+
+
+59 Tharun
+Chrám nebe a větru
+Magická tekutina, Luxusní zboží, Učenci
+
+
+60 Thaz’Korr
+Město obětí a démonů
+Dřevo, Magická tekutina, Branci
+61 Thorr Kuun
+Kamenný klášter hory
+Jídlo, Pracovní Síla, Nástroje
+
+
+62 Torr’Rhaz
+Přístav výhní a mostů
+Nástroje, Magické předměty, Lodě
+
+
+63 Tyr’Maw
+Hřbitov Velryb
+Jídlo, Magická tekutina, Nástroje
+
+
+64 Varinor
+Archiv bouří a pamětí
+Magická tekutina, Nástroje, Magické předměty
+
+
+65 Varr’Khul
+Udolí světla
+Jídlo, Železo, Nástroje
+
+
+66 Varr’Ryn
+Hřeben bouřných želv a ptáků
+Jídlo, Magická tekutina, Branci
+
+
+67 Vel’Shaar
+Chrámové město zlatých démonů
+Dřevo, Zlato, Pracovní Síla
+
+
+68 Veyl’Assar
+Chrám i palác, město přechodu
+Dřevo, Zlato, Magická tekutina
+
+
+69 Veyr’Kala
+Ostrovní lázně z krve
+Magická tekutina, Pracovní Síla, Lodě
+
+
+70 Vorath
+Observatoř hromů a hvězd
+Luxusní zboží, Magické předměty, Učenci
+
+
+71 Xhal’Tor
+Chrám bohyně krve
+Dřevo, Magická tekutina, Pracovní Síla
+
+
+72 Xor’Ruun
+Pevnost stromů a masa
+Dřevo, Pracovní Síla, Branci
+
+
+73 Zha’Leth
+Svatyně z kostí a lián
+Dřevo, Magické předměty, Branci
+
+
+74 Zlatovar
+Pivovarské město mágů
+Jídlo, Magická tekutina, Luxusní zboží
+
+
+75 Zářící pochod
+Klášterní město vojáků světla
+Jídlo, Pracovní Síla, Branci
+
+
+76 Žárov
+Přechod do džunglí
+Jídlo, Magická tekutina, Branci
+
+
+________________
+________________
+⚙️ Mechanika regionálních událostí
+Postupně se v herních regionech spustí krize. Dokud trvají mají na frakce s hlavním městem v regionu negativní dopad.
+         * Jen frakce, které mají v daném regionu města se mohou účastnit výpravy.
+
+         * Výprava má dvě složky:
+
+            * Sílu (vojenský vliv – vojáci, flotila, mágové)
+
+            * Zázemí (zásoby – Jídlo, Dřevo, Železo, Zlato, Magická tekutina, Pracovní Síla, Nástroje, Luxusní zboží, Magické předměty, Lodě, Branci, Učenci)
+
+               * Odehrána jako Questbook/lokačka s členy výpravy a organizátorem.
+               * Výsledek dává příběhové artefakty
+               * Nakonec krize globální - finální střípek příběhu a rozuzlení, do kterého se mohou zapojit všichni.
+               * Možnost využít příběhové artefakty pro ulehčení průchodu příběhem
+________________
+
+
+Regionální události 1. ročníku
+Zaměřené na efekty způsobené interferencí RhaThuun se Srdcem Khaledory, typicky nutné opravit nějakým způsobem geomantickou síť/odstranit vliv ohniváků nebo pomoci vyléčit srdce.
+
+
+               1. den hry - všechny normální
+               2. den hry - hlavní quest
+
+
+Udělat limity na volby v questbooky na procentuální poměř surovin ve hře (vytáhnu to z tabulky do přehledu
+
+
+Lore
+
+
+Rha’thuun (ohniví domorodci) neví o žádné “AI”. Vnímají svět nábožensky: mají posvátná místa (tepny/oči Matky Země) a věří, že když je zahřejí rituály, Matka se rozhněvá a začne trestat vetřelce.
+
+Tím zahříváním reálně ruší/přehřívají “senzorové uzly” napojené na Srdce Kheledory (prastarý, poškozený “správce” světa). Srdce neumí komunikovat slovy; reaguje jen terraformačními zásahy (déšť, bouře, proudy, otřesy, ventily, prach/stínění, apod.).
+
+Lokální (minor) krize jsou právě tyhle “odpovědi Matky Země”: Srdce si myslí, že je někde kritické přehřátí, a spustí korekci — jenže je to na špatných místech a přehnané.
+Hráči mohou každou lokální krizi “vyřešit” tím, že odhalí a zruší rituál / opraví signál / stabilizují uzel → oblast se viditelně uklidní. To vytvoří dojem: „svět jde zklidnit“.
+
+Když se tenhle přístup začne Rha’thuun hroutit (protože ho hráči pořád neutralizují), přejdou na plán B – last ditch: místo “rozzlobit Matku” zkusí zmrzačit její srdce. Udělají velký obřad, kterým se pokusí odepřít Srdci magma (zatarasit/prudce přesměrovat lávové proudy, “zaškrtit tepny”, případně šokově ochladit rozhraní).
+
+To vyvolá twist do finále: “cold crisis → bam hot one”.
+Srdce to vyhodnotí jako kolaps oběhu / ztrátu tlaku a průtoku, spustí nouzový režim pressurize + restore flow, a protože jsou kanály blokované, tlak si najde cestu ven: erupce sopky → globální krize.
+
+Finále: výprava/útok do oblasti sopky, průnik k Srdci a závěrečná volba:
+
+               1. Fix/heal (stabilizovat systém),
+
+               2. Dominate/bind (převzít kontrolu),
+
+               3. Damage/break (zničit/rozbít, s dlouhodobými následky).
+Formát expedice
+                  * 5 scén / 5 stránek, lineárně za sebou.
+
+                  * Každá stránka obsahuje:
+
+                     1. Wall of text (GM přečte/odvypráví situaci).
+
+                     2. 7 možností jako menu:
+
+                        * 5× BOOST volby (zůstáváš na stejné stránce)
+
+                        * 2× SOLVE volby (posun na další stránku)
+
+BOOST volby (5 na stránku)
+                           * Některé jsou greyed out, pokud expedice nemá potřebné zdroje.
+
+                           * Po zvolení boostu:
+
+                              * utratí se zdroj(e),
+
+                              * GM přečte krátkou konsekvenci,
+
+                              * expedice získá +1 BOOST a/nebo TAG,
+
+                              * zůstává na stejné stránce.
+
+                                 * BOOST counter se resetuje na 0 při přechodu na další stránku.
+
+                                 * TAGy (pokud používáme) mohou přetrvat napříč scénami (dle designu).
+
+SOLVE volby (2 na stránku)
+                                    * Zvolení solve vždy posune na další stránku (failforward).
+
+                                    * Solve má podmínky PASS/FAIL (např. podle počtu BOOSTů, tagů, nebo konkrétních zdrojů).
+
+                                       * PASS: pokračuje se bez postihu / případně bonus tag.
+
+                                       * FAIL: pokračuje se dál, ale přidá se NEG TAG / postih (curse/wound/loss/death – doplní se později). Logicky ultra fail kde všichni zemřou expedici ukončí.
+
+Finální řešení a metry kampaně
+                                          * Každá expedice na konci zvolí jednu z variant:
+
+                                             * Destroy / Heal / Dominate
+
+                                                * Po každé expedici se přičte +1 do příslušného metru kampaně (D/H/O). Nic víc.
+
+Finále larpu (poslední slide poslední expedice)
+                                                   * Metry jen určují dostupné finální možnosti:
+
+                                                      * Top 2 (nejvyšší metry) = dostupné
+
+                                                      * nejnižší metr = LOCKED (šedé)
+
+                                                      * pokud není jednoznačně nejnižší (remízy), nezamyká se nic (dostupné všechny 3).
+
+                                                         * Ve finále se hráči rozhodnou jen mezi dostupnými možnostmi.
+
+Secret ending (artefakty)
+                                                            * Každá minor krize dává 1 artefakt (prop + kartička).
+
+                                                            * Pokud jsou ve finále fyzicky přítomné všechny artefakty z minor krizí, zvolený konec se automaticky odehraje v SECRET/UPGRADED verzi.
+
+                                                            * Jinak se odehraje normální verze.
+
+                                                            * Artefakty nic dalšího nemění (jen upgrade konce).
+
+NPC
+                                                               * NPC se zatím neřeší (pro jednoduchost). Případně se přidá později jako čistě narativní “overlay modul” bez mechanik.
+
+
+Western Plains — Přívalové zavlažování
+Negativní Dopad: -1 jídlo z ediktů
+ Srážky v regionu se zvednou do nepřirozených přívalů a staré kanály se “probudí”. Pole jsou pod vodou, sklizeň hnije a půda se mění v bahno – lidé to berou jako hněv země, ale ve skutečnosti jde o přeregulované “chlazení” po falešném signálu přehřátí.
+Southern Jungles — Věčný monzun
+Negativní Dopad: -1 dřevo z ediktů
+ Nad džunglí se drží těžká oblačnost a lijáky bez pauzy. Dřevo nejde sušit, všechno plesniví, kůra hnije a stromy padají podmáčením. Džungle je průchozí jen s extrémními ztrátami a dřevo je křehké a nepoužitelné.
+Eastern Forges — Zatopené štoly
+Negativní Dopad: -1 železo a zlato z ediktů
+ Podzemní voda si najde nové cesty a doly se začnou náhle plnit. Zařízení rezne, lana praskají, dřevěné výdřevy měknou a propadají se. I když lidi přežijí, infrastruktura a nástroje mizí rychleji, než se dají nahradit.
+Northern Highlands — Bleskové bouře
+Negativní Dopad: -1 branci z ediktů
+ Bouře jsou častější, prudší a drží se u průsmyků a věží. Hlídky hynou na zásahy bleskem, komunikace padá a průsmyky jsou neudržitelné. Vypadá to jako boží trest, ale bouře se chovají podezřele lokalizovaně a opakovaně.
+Storm Peaks — Kroupové shozy
+Negativní Dopad: -1 luxusní zboží z ediktů
+ Místo normálních bouřek přichází opakované krupobití a ledové “jehly”, které rozbíjí střechy skladů, ničí sudy, sklo, jemné látky a citlivé zásoby. Základní přežití se dá nějak uhrát, ale to, co dělá bohatství (luxus, delikátní náklad, “drahé věci”), se rozpadá nebo znehodnocuje.
+Inner Sea — Přepnutí proudů
+Negativní Dopad: -1 lodě
+ Mořské proudy se změní a vzniknou vražedné koridory: lodě jsou strhávané mimo trasu, některé točí dokola, jiné mizí ve vírech. Nepůsobí to jako piráti ani jako náhoda – vraky se hromadí v pásu, jako když někdo přestaví tepnu.
+Archipelagos — Kolaps korálů a umírající útesy
+Negativní Dopad: -1 magická tekutina z ediktů
+ Útesy bělají a odumírají, lámou se a přeskládají mělčiny. Pro alchymisty a mágy je to katastrofa: “magická tekutina” se běžně sbírá z živých korálů (mízovitý sekret / solný destilát / perleťový výluh), jenže umírající útesy ji přestávají produkovat nebo je kontaminovaná. Navigace je sice taky horší, ale hlavní rána jde do zdroje magie.
+Globální Krize - Erupce sopky
+Negativní Dopad(celá hra): -1 jídlo ze všech ediktů jak popel zakryje nebe Kheledory. V každém tahu NPC útok ze sopky na nejbližší kontrolované město ve snaze ho osvobodit.
+
+
+Konečná kulminace příběhu, primárně vojenenský multistage battle kde se alianční armáda Kheledory probíjí skrze sopku do podzemních magmatických hlubin a snaží se zastavit RhaThuun a vyléčit Srdce (nebo ho pokroutit ke svým cílům.
+________________
+
+
+🧭 Frakce a jejich charakteristika
+________________
+
+
+
+
+Frakce mají Silné zdroje - jejich edikty pak dávají +2 suroviny (6 total) - je potřeba je explicitně specifikovat v frakčních listech
+________________
+1. Shoal – Pontaurožci z korálových ostrovů
+  
+
+  
+
+Pontaurožci vznikli před mnoha lety magickým křížením jednorožců a již zmutovaných pontaurů (něco jako kentaur, ale z poníka) jako snaha abolethí vládkyně chránit své země před piráty. Počátek rasy byl tak poznamenán zajetím v laboratořích. Malé skupince se ovšem podařilo uniknout a plavali na jih tak dlouho, až narazili na Kheledoru. Ač nejsou místní, právě pontaurožci byli prvními „kolonizátory“ kontinentu. Počínali si poměrně mírumilovně a vybudovali si korálové město Shoal, a tak s místními doposud žili poměrně v míru.
+Pontaurožci se díky svému nepřirozenému původu velice rychle množí a mají slabé magické nadání, a tak jsou silní v rozvoji pracovní síly a sběru magické tekutiny a jídla z korálových útesů. Jejich obojživelná povaha jim (podobně jako žábám) ovšem umožňuje pouze omezenou interakci s vnitrozemím.
+Silné zdroje: Pracovní síla, Magická tekutina, Jídlo.
+Speciální mechanika: Nepotřebují lodě (ač je umí vyrábět) - jejich vojáci se umí pohybovat po moři. Nemohou ovšem zabrat trvale vnitrozemí.
+
+
+________________
+
+
+2. Dracogallus – Drakoslepice
+  
+
+  
+
+Dracogallus vznikli, když některé z psionických slepic dostaly skvělý nápad zkusit konzumovat dračí krev. Dračí krev původně krátkověké slepice přetvořila na prakticky nestárnoucí, dvoumetrové, odolné drakoslepice schopné chrlit ze zobáku oheň. Drakoslepice po dracích také zdědily jejich bezbřehou aroganci a pohrdání ostatními rasami. Snad i proto se první drakoslepice rozhádaly se svými psionickými druhy a založily si kolonii v Kheledoře. Dracogallus tak byli druhou nenativní rasou, která se na ostrovy dostala. Drakoslepice vycházely s původními obyvateli Kheledory hůře než Shoal kvůli své konfrontační povaze, ale protože si spíš izolacionisticky budovaly hnízda v horách, nedošlo k větším incidentům.
+Dracogallus si ponechali (byť slabší) psionické schopnosti svých předků a díky nim mají talent na extrakci magické tekutiny, výrobu magických předmětů a trénování učenců.
+Silné zdroje: Magická tekutina, Magické předměty, Učenci.
+Speciální mechanika: Psionické schopnosti jim umožňují lehce zjišťovat informace o ostatních frakcích. (edikt na špionáž jednou za okno)
+________________
+
+
+________________
+3. Mar’Rhazûn – Chaotičtí trpaslíci
+  
+
+  
+
+Naprostá většina trpaslíků byla odvěkými nepřáteli všeho chaosu. Trpaslíci Mlžných ostrovů ovšem navzdory svému národnímu sporu podlehli vlivu chamtivosti a potřebě dominovat a nekontrolovatelně těžit. Mar’Rhazûn je nezávislou kolonií trpaslíků Mlžných ostrovů, kteří na ostrovy přijeli rozvíjet svůj průmysl a těžit nerostné zdroje. S jejich příjezdem na ostrovy začaly problémy a trpaslíci se s místními obyvateli kvůli svým vykořisťovatelským choutkám často dostávali do křížku. Zvláště s ohnivými Rha’thuun, které na ostrově společně s ostatními, později dorazivšími kolonizátory Taznaru a Malvetharu, prakticky vyhladili.
+Trpaslíci jsou posedlí bohatstvím a průmyslem, a tak jsou nepřekonaní v efektivní těžbě zlata, železa a ve výrobě nástrojů.
+Silné zdroje: Železo, Nástroje, Zlato.
+Speciální mechanika: Průmyslová síla - Edikty na Silné zdroje Mar’Rhazûn produkují o +1 více než běžné Silné zdroje (tj. 7 místo 6).
+________________
+4. Ooruun – Bledí kyklopové
+  
+
+  
+
+Ooruun jsou jedním z původních obyvatel Kheledory. Běžně klidní, bledí kyklopové uctívající Matku Zemi, s láskou k cestování, se dokáží při dlouhodobé provokaci a utiskování nebývale rozzuřit a překvapit ostatní svou až nadpřirozenou silou. Bledá kůže Ooruun těžce nese dlouhodobý kontakt se solí, která v kombinaci s vlhkostí způsobuje „slanou nemoc“, při níž se kůže postupně zcela rozpustí. Ooruun proto nejsou fyzicky schopní mořeplavby a zdržují se spíše ve vnitrozemí. Ooruun jsou také nedůvěřiví vůči kolonizátorům, kteří vyhladili sousední domorodý ohnivý lid Rha’thuun.
+Jejich síla a houževnatost jim nejen poskytuje výhodu při výrobě nástrojů a pěstování jídla, ale když se kmeny Ooruun vydají na cestu války, rozzuření kyklopí vojáci nemají na ostrovech sobě rovné.
+Silné zdroje: Jídlo, Branci, Nástroje.
+Speciální mechanika: Nevyužívají lodě ani je na nic nepotřebují. Nemohou převzít přístavy (ale mohou je okupovat nebo osvobodit) ani cestovat přes vodu. Vojáci mají větší bojovou sílu než je běžné ale pomaleji se obnovují. Nemusí trasovat osídlení k hlavnímu městu (ignorují omezení enkláv). Vojáci mohou cestovat až 3 nody za hranice.
+________________
+________________
+5. Ael’thuun – Jedni s bouří
+  
+
+  
+
+Ael’thuun jsou éteričtí domorodci žijící vysoko v horách. Většina z nich žije ve městě Ael’Sir na vrcholku hory, které je nepřístupné jakoukoli pozemní cestou. To jim ale nevadí, protože nejenže umějí přirozeně létat, ale mají také obrovský talent na magii, primárně svázanou se vzduchem, blesky a bouřemi. Ael’thuun jsou velice racionální a zvědaví. Přirozeně chtějí všemu novému porozumět. Možná i proto mají, na rozdíl od svých ohnivých bratrů Rha’thuun, kteří byli prakticky vyhlazeni, Ael’thuun ke kolonizátorům rezervovaný, ale ne vyloženě nepřátelský přístup.
+Jejich hluboké spojení s blesky jim umožňuje efektivně produkovat magické předměty, luxusní zboží a trénovat učence.
+Silné zdroje: Magické předměty, Učenci, Luxusní zboží.
+Speciální mechanika: Nevyuživají Flotilu ani Armádu, jejich města nikdy nejsou Enklávy, jejich hlavní město je napadnutelné jen Mágy, ale má menší přirozenou obranu než ostatní hlavní města. Pro účely špionáže (ale ne obchodu) sousedí se všemi ostatními frakcemi a městy.
+________________
+
+
+________________
+6. Elyndar – Pegasí rytířstvo
+  
+
+  
+
+Elyndar sdružuje lidské uprchlíky ze Starého světa, kteří se vydali do Kheledory na svatou pouť nebo hledat nový začátek. Lidé v Elyndaru vytvořili na první pohled tradiční, idylické feudální království, kde šlechta pořádá turnaje a vesničané se hrabou v hlíně. Při příchodu do Kheledory také první osadníci narazili na pegasy – okřídlené koně – které se jim podařilo zkrotit, a teď na nich létají ti nejprestižnější rytíři království. Lidé Elyndaru se během kolonizace, tak jako mnozí ostatní, dostali do křížku s Rha’thuun, které společně s Ordo Solis prakticky vyhladili.
+Elyndarský feudální systém je excelentní v pěstování jídla, těžbě dřeva a přípravě branců.
+Silné zdroje: Jídlo, Branci, Dřevo.
+Speciální mechanika: Pokud porazí armádu v boji, utrží nepřítel 100% ztrát, jak pegasí rytíři pobijí prchající vojáky.
+________________
+
+
+________________
+7. Taznar – Kulty chaosu
+  
+
+  
+
+Taznar je teokratický stát kultistů chaosu, šílenců a zvrhlíků, který se usadil v jižních džunglích. Prakticky již od svého příjezdu vstoupili kultisté chaosu do otevřené války s Rha’thuun, které společně s Malvetharem a Mar’Rhazûn prakticky vyhladili. Obyvatelé Taznaru uctívají démony chaosu jako své nezemské pány a předhánějí se v tom, kdo jim předloží větší oběť a získá od nich tak více přízně. Otrokářství a krvavé oběti jsou tu tak na denním pořádku.
+Taznar je schopný neobyčejně efektivně, s pomocí zástupů otroků, těžit dřevo, extrahovat (z těl nebohých otroků) magickou tekutinu a připravovat fanatické brance k boji. Armády Taznaru jsou kromě lidí doplněné i legiemi nižších démonů, které do reality přivolávají svými zvrhlými oběťmi.
+Silné zdroje: Magická tekutina, Dřevo, Branci.
+Speciální mechanika: Démonické smlouvy - každý edikt Magické Zřídlo poskytuje jednu jednotku branců navíc.
+________________
+________________
+
+
+8. Malvethar – Temní elfové moří
+  
+
+  
+
+Malvethar je hedonistický městský přístav pirátů a nájezdníků. Zformovaný primárně Vorloky (bytostmi až překvapivě připomínajícími elfy černé kůže a bílých vlasů), kteří opustili svou domovskou ostrovní magokratickou metropoli Vornagar, aby mohli jako nečarodějové realizovat své hedonistické choutky naplno. Prakticky hned po příjezdu se spojili s Taznarem a Mar’Rhazûn, aby vyhladili Rha’thuun na jihovýchodě Kheledory. Éterické ohnivé bytosti se ovšem ukázaly jako špatní otroci, kteří v zajetí dlouho nepřežijí.
+Jejich pirátský původ znamená, že Malvethar je efektivní v získávání zlata, luxusního zboží a pracovní síly. Jejich síla je také (jak už to u pirátů bývá) opřená primárně o přístavní města.
+Silné zdroje: Zlato, Luxusní zboží, Pracovní síla.
+Speciální mechanika: Námořní nájezdníci - každé přístavní město poskytuje 5 pracovní síly a 5 zlata navíc.
+________________
+
+
+________________
+9. Aurumbræ – Pivomanceři
+  
+
+  
+
+Aurumbræ je městský stát, který se na rozdíl od Elyndaru zformoval z lidí přímo z Mlžných ostrovů. Tradice místních alchymistů a mágů navazuje na Lagerholm a zaměřuje se na vaření piva nevídaných chutí a schopností. Jedná se o mírumilovný obchodní stát, který se do genocidy Rha’thuun prakticky nezapojil (kromě ekonomické podpory ostatních lidí) a jeho hlavní starostí je mít ve světě víc piva.
+Pivocentrická kultura Aurumbræ je obzvláště efektivní v pěstování jídla (chmelu), shromažďování pracovní síly, ve výrobě luxusního zboží (ležáky) a v obchodu.
+Silné zdroje: Jídlo, Pracovní Síla, Luxusní zboží.
+Speciální mechanika: Síť hospod - každých 5 exportovaných surovin poskytuje +1 zlato.
+________________
+
+
+________________
+10. Qal Asar – Výprava učenců
+  
+
+  
+
+Qal Asar vznikl z původně magické a objevné expedice Quelů – subtypu elfů, kteří, ač nízkého počtu, jsou politicky dominantní rasou přilehlého pobřeží Starého světa. Učenci Qal Asaru jsou primárně zaměření na průzkum Kheledory a odhalení jejích magických tajemství. Snaží se s domorodci vycházet dobře – zvláště s Ael’thuun, kde vidí velký potenciál magické spolupráce.
+Ač méně nadaní oproti Ael’thuun, co se surové magické síly týče, jsou Quelové stále excelentní a velice akademičtí mágové s tisíciletou kulturní tradicí magických umění a jejich výzkumu. Ta jim umožňuje efektivní sběr magické tekutiny, výrobu nástrojů a nepřekonatelnou efektivitu ve výrobě magických předmětů.
+Silné zdroje: Magická tekutina, Magické předměty, Nástroje.
+Speciální mechanika: Alchymie - Edikt na výrobu magických předmětu je silnější (+2 na 8 total)
+________________
+
+
+________________
+11. Ordo Solis – Řád Slunce
+  
+
+  
+
+Ordo Solis je svatý řád, který vznikl radikalizací poutníků myšího lidu na jejich svaté pouti. Z původně mírumilovných uprchlíků a uctívačů světla se stal militantní řád paladinů a fanatických svatých válečníků na cestě očistění světa od sil chaosu a zla. Ordo Solis pomohl Elyndaru ve vyhlazení ohnivých Rha’thuun a je velice nespokojený s úpadkem jihovýchodu Kheledory k silám chaosu.
+Myší lid má skvělé řemeslné zázemí, které Ordo Solis umožňuje vysokou efektivitu v pěstování jídla, výrobě nástrojů a přípravě branců. Ordo Solis navíc aktivně konvertuje místní obyvatelstvo na svou víru a je běžné, aby zámožní občané přispívali Řádu slunce zlatem.
+Silné zdroje: Branci, Jídlo, Nástroje.
+Speciální mechanika: Desátky - každé ovládnuté město produkuje navíc automaticky 10 zlata.
+________________
+
+
+________________
+12. Morr’ghuun – Hlubinné bytosti
+  
+
+  
+
+Morr’ghuun jsou domorodým národem hanlivě nazývaným rybí lidé. Jedná se o původní obyvatele Kheledory, podle legend dokonce o první. Běžně mluví bubláním a syčením a z čela jim vyrůstá světélkující návnada, která ve tmě láme vůli kořisti. Na souši vydrží bez pomoci magie jen krátce, než je světlo a vzduch vysuší. Morr’ghuun ovšem žijí v primitivní kmenové společnosti na dně moří obklopujících Kheledoru. Jejich posvátná místa jsou v hlubinách příkopů, nedostupná suchozemským bytostem. Během prvního boje s kolonisty stáli na straně Rha’thuun, ale jak byli ohniví domorodci poraženi, Morr’ghuun se přeorientovali na partyzánský styl boje z moře.
+Ač technologicky primitivní, jejich řemeslná výroba má velkou kulturní tradici, a jsou tak efektivní v získávání jídla, dřeva a ve výrobě nástrojů.
+Silné zdroje: Jídlo, Dřevo, Nástroje.
+Speciální mechanika: 
+Sousedí se všemi přístavy a nemůžou převzít města. Mohou ale okupovat přístavy nebo osvobozovat dle klasických pravidel. Okupovaný přístav dává +1 Jídlo, Pracovní Síla a Nástroje.
+Jejich vojáci nepotřebují lodě a umí se pohybovat po moři.
+Hlavní město (Hadalská propast) je hluboko v mořské průrvě nedostupné žádnou cestou. (kromě teleportace čarodějů)
+Ediktové limity si zvyšují pomoci řady speciálních ediktů zaměřených na unifikaci regionálních kmenů, ty stojí základní + regionální cenu:
+Základní cena (stejná pro všechny):
+2× Jídlo + 2× Pracovní síla + 1× Nástroje
+Western Plains — Cena: 5 Dřevo. Efekt: +5 limit Jídlo a +5 limit Pracovní síla.
+Southern Jungles — Cena: 5 Nástroje. Efekt: +5 limit Dřevo a +5 limit Jídlo.
+Eastern Forges — Cena: 5 Zlato. Efekt: +5 limit Železo a +5 limit Nástroje.
+Northern Highlands — Cena: 5 Pracovní síla. Efekt: +5 limit Branci a +5 limit Železo.
+Storm Peaks — Cena: 5 Jídlo. Efekt: +5 limit Branci a +5 limit Nástroje.
+Inner Sea — Cena: 5 Železo. Efekt: +5 limit Zlato a +5 limit Nástroje.
+Archipelagos — Cena: 5 Jídlo (nebo 5 Dřevo). Efekt: +5 limit Dřevo a +5 limit Zlato.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+________________
+13. Kame no Kaizoku – Nipponští korzáři
+  
+
+  
+
+Kame no Kaizoku je korzárská a obchodní společnost, která pochází z Nipponu, nejbližšího království Dračího císařství. Nipponci připomínají humanoidní želvy a dokážou na velmi dlouhou dobu zadržet dech. Jedná se spíše o renegády a róniny, a tak nemají žádné vazby přímo na Dračí císařství a jsou skutečně nezávislí.
+Jejich cílem na ostrovech je pouze profit a nemají žádné větší imperiální ambice. Jako obchodní frakce nejsou schopni přímo kontrolovat více měst než své hlavní. Navzdory tomu je jejich hlavní město efektivní ve stavbě lodí, pěstování rýže a sběru i tavbě železného písku nazývaného satetsu.
+Silné zdroje: Lodě, Jídlo, Železo
+Speciální mechanika: Obchod - přístup ke globálnímu trhu a edikt na obchodní špionáž. Může obchodovat se všemi.
+________________
+
+
+
+
+________________
+14. S.O.S. – Sharandarská obchodní společnost
+  
+
+  
+
+Sharandarská obchodní společnost je masivní elfský korporát pokrývající obchod v prakticky celém Dračím císařství. Je přitom relativně mladá, ale elfové jsou špičkoví mořeplavci a obchodníci, takže dokázali scénu ovládnout nečekaně rychle. V kuloárech se šušká, že jsou přímo napojení na císařskou rodinu a že některá privilegia nejsou obchodem, ale politikou. Společnost to samozřejmě kategoricky odmítá.
+Jejich cílem na ostrovech je pouze profit a nemají větší imperiální ambice. Jako obchodní frakce nejsou schopni přímo kontrolovat víc měst než je jejich hlavní. Navzdory tomu je jejich hlavní město efektivní ve stavbě lodí, těžbě dřeva a sběru magické tekutiny.
+Silné zdroje: Lodě, Dřevo, Magická Tekutina
+Speciální mechanika: Obchod - přístup ke globálnímu trhu a edikt na obchodní špionáž. Může obchodovat se všemi.
+________________
+
+
+________________
+15. Rudá flotila – Nemrtví obchodníci
+  
+
+  
+
+Rudá flotila je nemrtvou obchodní flotilou točící se kolem jednoho muže. Nebo spíše upířího dračího člověka Gorna. Ač původně divoký, překročil hranice své smrtelnosti pomocí hedonistického rituálu a získal vzdělání v nekromancii od černokněžníků Kersku. Jeho hlad po zlatě je legendární a není nic, co by pro větší bohatství neudělal. To podtrhuje i fakt, že celá frakce je kromě Gorna samotného prakticky jen z nemrtvých, věčně otročících, aby Gorn mohl více a více stěn svého paláce pokrývat zlatými pláty.
+Gornovým cílem na ostrovech je pouze profit a nemá větší imperiální ambice. Jako obchodní frakce není flotila schopna přímo kontrolovat více měst než své hlavní. Navzdory tomu je jejich hlavní město efektivní ve stavbě lodí, reanimaci pracovní síly a získávání zlata z kasin, která se nikdy nezavírají.
+Silné zdroje: Lodě, Pracovní Síla, Zlato
+Speciální mechanika: Obchod - přístup ke globálnímu trhu a edikt na obchodní špionáž. Může obchodovat se všemi.
+________________
+Rha’thuun
+  
+
+Rasa příbuzná s Ael’thuun. Jedná se o domorodou frakci která původně s kolonisty bojovala, ale s příchodem nových a nových osadníků se přeživší stáhli hluboko pod zem. Hlavní krize a příběh světa zaměřený na jejich návrat a snahu osadníky z ostrovů vyhnat pomoci elementální magie a nakonec přímého útoku skrze sopku.
+________________
+
+
+________________
+⚖️ Základní cíle systému
+                                                               1. Udržet rotující krize – každý region se dostane do středu dění. Nakonec globální krize.
+
+                                                               2. Zajistit interakci mezi frakcemi skrz obchod, spojenectví a vojenské konflikty.
+
+                                                               3. Udržet mapu přehlednou – cca 60 měst jako jediná herní „uzly“.
+
+                                                               4. Každé město dává 3 zdroje → ekonomická pestrost bez přetížení..
+
+
+Design poznámky
+                                                                  1. Transparentně napsat obchod (nachystat si grafíky)
+                                                                  2. Schopnosti budou mít cooldowny (jednou za den/hodinu etc.)
+                                                                  1. Výrazně omezené imunity
+Temné Stezky
+Questbook který si hráč co hraje ducha může projít a dle toho se nějak navrátí zpět mezi živé.
+________________

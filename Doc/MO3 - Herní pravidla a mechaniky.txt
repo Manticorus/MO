@@ -1,0 +1,534 @@
+﻿Mlžné ostrovy
+Herní pravidla a mechaniky
+Herní mechaniky jsou postavené na speciálních schopnostech, Ediktech a vašich sociálních dovednostech. Mlžné ostrovy jsou nebojový LARP, takže, prosím, nepoužívejte fyzické násilí. Pokud s sebou máte larpovou zbraň, nechte ji jen jako rekvizitu. Její použití bez aktuálního schválení organizátory může vést k jejímu zabavení a potenciálně k vašemu vyloučení z akce.
+
+
+Postavy
+Speciální schopnosti a předměty
+Speciální schopnosti jsou popsány u každé postavy a jedná se o konkrétní dovednosti postavy. Předměty, ve hře vyjádřeny kartičkami, může používat každá postava, která je získá. U každé speciální schopnosti a předmětu je přesně popsané, jak je aktivovat a co se poté stane. Pokud není na první pohled jasné, co přesně cíli dělá, je třeba neherně cíli vysvětlit, co že se mu tedy vlastně děje. POZOR! Pokud právě používáte nějakou schopnost, nemůžete zároveň používat jinou, dokud tu první nedokončíte (neřeknete jméno, typ a efekt), nebo ji nepřerušíte. Tedy třeba [Magické] schopnosti je často snadné přerušit [Fyzickými]. (Pokud stojíte vedle sebe, říct Bum! je rychlejší než In albis flammis arde!)
+Lokální a Globální
+Schopnosti a předměty mohou být buď Lokální, která mají efekt na fyzicky přítomné postavy ve hře, nebo Globální, které ovlivňují hru na mapě.
+Typy schopností
+Lokální schopnosti a předměty jsou rozděleny dle typu na [Fyzické], [Magické] nebo [Alchymistické]. 
+
+
+Typ vždy hlašte spolu s efektem, ať se případně cíl může bránit.
+Efekty
+Omráčení
+Některé schopnosti umí způsobit efekt omráčení. Ten uvede cíl na 15 minut do bezvědomí a takto omráčená bytost zapomene poslední jednu minutu před svým omráčením. Při hraní bezvědomí tak čiňte hlavně bezpečně, pokud nejde na místě, kde stojíte, bezpečně padnout, odpotácejte se kousek bokem.
+Smrt
+Některé schopnosti umí způsobit efekt smrti. Ten cíl (nečekaně) zabije. Zabitá bytost zapomene posledních 15 minut před svou smrtí (včetně toho, jak umřela). Při hraní smrti tak čiňte hlavně bezpečně, pokud nejde na místě, kde stojíte, bezpečně padnout, odpotácejte se kousek bokem.
+
+
+Poté, co jste zabiti, nastává několik fází smrti:
+Mrtvola
+Hrajete mrtvolu, která čeká na záchranu či oživení, kýmkoliv jiným, kdo to dokáže. Hráč prostě bezvládně leží a nemůže (jako běžná mrtvola) nic dalšího dělat. Jakmile hráč čekání na záchranu vzdá (může klidně hned, například pokud byl zabit někde, kde se k tělu nikdo nikdy už nedostane), stává se duchem.
+Duch
+Duše opustila tělo a to je tak nenávratně zničené dekompozicí. Hráč poté hraje vlastního ducha. Je neviditelný (jedna ruka na hlavu), vydává mrtvolné hučení a až na specificky zmíněné výjimky nemůže s okolím interagovat jinak než hlasem. (nemůže se ničeho dotýkat, nemůže používat schopnosti, nelze na něj používat schopnosti, nemůže vydávat rozkazy/Edikty atd…). Duch se ovšem může vydat na expedici. Může se pokusit ve hře najít postavy které, by ho zvládli vrátit zpět mezi živé (typicky mocní kněží, nekromanti, či praktikanti temné magie). Jakmile duch sezná, že jeho čas na světě je u konce, může se vydat do sféry smrti.
+Sféra Smrti
+Duch, který se vydá do sféry smrti, je nenávratně ztracen a ztrácí veškerý kontakt se světem živých. Vydej se za organizátorem a společně rozhodnete co dál (nová postava).
+Neviditelnost
+Pokud má nějaký hráč jednu ruku na hlavě, je neviditelný, a měli byste ho zcela ignorovat. Neviditelná postava ale není neslyšitelná a neviditelná je jen s věcmi, které měla u sebe při seslání. Použití schopností neviditelnost ruší.
+Nepřítomnost
+Pokud má hráč obě ruce na hlavě je nepřítomen Nemůže žádným způsobem zasahovat do hry a nic ve hře ho nemůže ovlivnit. Prosím nezneužívejte toho a ruce na hlavu si dávejte pouze v případech, kdy to organizátor výslovně řekne nebo vám to umožňují nějaká pravidla.
+Strach
+Postava pod efektem Strachu se bude následujících 5 minut snažit dostat z dohledu od toho, co jí tento efekt způsobilo. 
+Odolání
+Zahlaš neprodleně poté, co se staneš cílem efektu, a tím ho úplně zruš.
+________________
+Odražení
+Zahlaš neprodleně poté, co se staneš cílem efektu, a tím ho úplně odraž zpátky. Pokud je tento efekt aplikován dvakrát na stejnou věc, celá se zruší.
+Probuzení
+Okamžitě zruší efekt Omráčení. Nelze použít na sebe.
+Vyléčení
+Okamžitě odstraní efekt Smrt ve fázi Mrtvola. Nelze použít na sebe.
+Oživení
+Okamžitě odstraní efekt Smrt ve fázi Duch.
+Vyzvídání
+Postava, která se stala cílem Vyzvídání, musí na následující otázku pravdivě odpovědět a vůbec jí to nepřijde podezřelé. 
+Vzácné schopnosti a předměty
+Ve výjimečných případech se můžete ve hře setkat se vzácnými schopnostmi nebo předměty.
+[SPECIÁLNÍ] 
+Efekty [SPECIÁLNÍ] lze Odolat/Odrazit pouze [SPECIÁLNÍ] Odoláním/Odražením. Pokud [SPECIÁLNÍ] Odražení odrazí efekt jiného typu (např. [Magický]), odražený efekt se považuje za [SPECIÁLNÍ]. Nepočítá se za žádný ze základních typů a je jim nadřazený. 
+KLETBA
+Efekt této schopnosti nebo předmětu je dlouhodobý nebo trvalý.
+POŽEHNÁNÍ
+Okamžitě odstraňuje efekt Kletba.
+SEBEVRAŽDA
+Toto okamžitě na sesilatele aplikuje efekt Smrt ve fázi Duch.
+VÝROBA
+Umožňuje vytvářet různé věci, dle popisu schopnosti.
+OVLÁDNUTÍ
+Postava pod tímto efektem bude poslouchat toho, kdo na ní tento efekt použil. Pokud by ale měla vykonat čin, který by ji ohrozil na životě nebo by ohrozil existenci Frakce, neprovede jej a bude místo toho Omráčena.
+________________
+
+
+Příklady
+ 
+NININININININININI!
+[Magická] SEBEVRAŽDA - Při seslání se třikrát se otoč kolem své osy. Okamžitě vzplaneš rudým plamenem a ukončíš tak svůj život. Lepší než být zajat, vyslechnut a vyzradit důležitá tajemství.
+
+
+Bum!
+[Fyzické] Omráčení - Při použití této schopnosti mávni sevřenou pěstí v prostoru před cílem (simuluje úder).
+
+
+Je tu někde felčar? Já jsem felčar!
+[Alchymistické] Vyléčení - Při použití této schopnosti krátce zahraj resuscitaci postavy. Máš s sebou ale jen omezené zásoby a tak tuto schopnost můžeš použít jenom dvakrát za celou hru.
+
+
+SEM VLOŽIT UKÁZKY PŘEDMĚTŮ
+________________
+Frakce
+Většina postav ve hře je součástí určité Frakce. Frakce je na mapě světa reprezentována svými vlajkami. Frakce ovládá Města, má Vojsko, disponuje Surovinami a vyhlašuje Edikty. 
+
+
+Frakce může hru začínat s již vyhlášenými Edikty - viz její konkrétní přehled. Edikty lze ve hře rušit.
+
+
+Frakce disponuje dynamickým přehledem - stránkou v google documentu, která je pro danou Frakci u organizátorů po dobu hry volně k nahlédnutí.
+Suroviny
+Suroviny jsou primární zdroje Frakce využívané typicky pro Edikty. Každá Surovina představuje spíše ekonomický tok zboží než spotřebovatelnou krabici ve skladu. Suroviny typicky nikde nemizí, ale transformují se na jiné Suroviny. 
+Typy Surovin
+* Jídlo
+* Dřevo
+* Železo
+* Zlato
+* Magická tekutina
+* Pracovní Síla
+* Nástroje
+* Luxusní zboží
+* Magické předměty
+* Lodě
+* Branci
+* Učenci
+Ekonomický kolaps
+V případě, že se libovolná Surovina Frakce dostane do záporných hodnot, dojde ve Frakci k Ekonomickému kolapsu. Frakce je Ekonomickým kolapsem zcela zaneprázdněná, nemůže vyhlašovat žádné Edikty s výjimkou Obchodních kontraktů, ale udrží si svou aktuální produkci (aby se nedostala do kaskády Ekonomických kolapsů).
+
+Ekonomický kolaps trvá, dokud má Frakce alespoň jednu Surovinu v záporné hodnotě. Jakmile jsou všechny Suroviny opět na nule nebo v kladných hodnotách, kolaps okamžitě končí.
+________________
+
+
+Města
+Města reprezentují důležité uzly civilizace ovládající přilehlá území. Na mapě jsou jasně vyznačena a spojena cestami a jen takto spojená Města se považují za sousedící. Přístavní Města jsou skrze moře spojená se všemi ostatními Přístavními Městy (lodní doprava je rychlá a tak všechna sousedí se všemi). Přístavní Města jsou na mapě označeny kotvou. 
+
+
+Každé Město zvyšuje Ediktový limit Frakce ve 3 typech Surovin a zvyšuje velikost Frakce.
+Dominium
+Za Dominium se považují všechna Města Frakce, která mají přímé spojení s hlavním Městem Frakce. Ty jsou na mapě označeny hvězdou. Za sousední Frakci se považují jen Frakce, které sousedí s dominiem. 
+Tento pojem je klíčový pro sousedství, obchod, válku a pakty.
+Enklávy
+Pokud by se nějakým způsobem Frakce rozdělila a část Měst zůstala “odříznutá” od hlavního Města, tyto Města se stávají Enklávou. Enklávy přestanou poskytovat Frakci Ediktový limit, ale stále budou zvyšovat její velikost. Stejně tak automatická obrana se v Městě bude mobilizovat pouze z Mágů Frakce (protože se tam ostatní nemají jak dostat).
+Ediktový limit
+Frakce začíná s Ediktovým limitem 2 v každé Surovině[a][b][c][d][e][f] a nikdy nemůže klesnout níž. Každé Město Frakce pak zvedá limit ve vybraných Surovinách o (20 - velikost Frakce)[g][h][i][j] a samotnou velikost Frakce o 1.
+
+
+Vnitřní Edikty lze vyhlašovat do maximá 2*Ediktový limit[k][l]. Každý produkční Edikt vyhlášený nad Ediktový limit ovšem produkuje pouze polovinu normálních Surovin.[m][n][o][p] 
+
+
+Toto reprezentuje nejen limit přirozených Surovin na území, která Frakce ovládá, ale také zvyšující se neefektivitu jejich využití s rostoucí rozlohou Frakce.
+
+
+Sem dát příklad!
+________________
+Vojsko
+Narozdíl od Surovin reprezentuje počet Vojska konkrétní bojovou sílu Frakce a ta jako taková nemůže být obchodována. 
+Vojsko Frakce se skládá ze tří elementů:
+* Armáda - pozemní síly Frakce
+* Flotila - námořní síly Frakce a její schopnost boje na moři a přepravy Armády po něm
+* Mágové - speciální jednotky Frakce s vysokou silou a mobilitou, ale drahé a pomalu rekrutované.
+Rekrutování
+Na konci každého tahu, kdy NEvykonávala Frakce žádné Vojenské Edikty, se zvýší její aktuální počet jednotek Armády a Flotily o hodnotu volných Branců a Lodí (pokud není na maximu).
+
+
+Počet jednotek Mágu se zvýší o ¼ volných Učenců. Rekrutování nepoužívá zlomky a tak Frakce potřebuje alespoň 4 volné učence, aby mohla vyprodukovat 1 Mága.
+
+
+Maximální množství jednotek Armády a Flotily je počet volných Branců a Lodí Frakce *3. 
+Flotilu mají pouze Frakce které mají přístav. Pokud o poslední přístav přijdou ztratí s ním i celou flotilu. Maximální množství jednotek Mágu je počet volných Učenců *1.
+
+
+Branci, Lodě a Učenci určují maximální možné množství jednotek, nikoliv jejich aktuální stav. — ztráty v bitvách toto maximum nesnižují.
+Bojová Síla
+Ukazatelem schopnosti armády v poli je Bojová Síla. Jednotky armády i flotily mají bojovou sílu jedna, jednotka mágů má bojovou sílu 5.
+Stav Armády
+Stav armády lze vidět dynamicky v přehledu Frakce
+  
+
+
+
+________________
+Válka
+Útočné operace vyhlašuje hráč přímo Edikty (viz Edikty).
+
+
+Obranné operace jsou automatické - v případě, že je Frakce napadena, automaticky z dostupných zdrojů mobilizuje vlastní Vojsko, které se snaží napadené Město bránit. Obrana se snaží nasadit tolik jednotek, aby dorovnala útočníka s tím, že nasazuje prioritně Armádu, poté Flotilu (v přístavech) a až nakonec Mágy. Hráči nemohou složení automatické obrany nijak ovlivnit. V případě pominutí nebezpečí se toto obranné Vojsko zase automaticky rozpustí. Stejně tak se Vojsko automaticky rozpustí, pokud je poraženo a Město dobito.
+
+
+POZOR! Každé Město má nějakou svoji posádku, která bude Město bránit vždy proti jakémukoliv typu útoku! Tato posádka se nezapočítává do Vojska Frakce a nelze ji tedy ani nikam vyslat.
+
+
+Bitvy o konkrétní Města probíhají jednoduchým porovnáním Bojové síly útočníka a Bojové síly obránce. V konfliktu vyhrává ten, jehož Bojová síla je větší. V případě rovnosti vyhrává obránce. Během bitvy vítěz ztratí ¼ nasazených jednotek a poražený ½ nasazených jednotek (zaokrouhleno nahoru). Suroviny, ze kterých Vojsko vychází, zůstanou nedotčeny.
+
+
+Bitvy probíhají až nakonec, po vyhodnocení všech rozkazů!
+
+
+Edikty
+Speciální akce, které může Frakce typicky opakovaně vykonávat. Edikt vyžaduje pro vyhlášení určité Suroviny, které svou aktivací konzumuje. Edikty lze typicky zrušit. Při zrušení Ediktu se vám Suroviny, které konzumuje, trvale navrátí zpět.
+
+
+Provedení Ediktu tedy vypadá takto:
+* Hráč napíše na Rozkazový papír Edikt (či Edikty), kde je jasně definované, o jaký Edikt se jedná (stačí jméno Ediktu) a poskytne na Edikt svůj podpis.
+   * POZOR! Pro účely hry podpisy nelze zfalšovat (pokud to vyloženě neumožňuje speciální efekt), nepokoušejte se tedy podepisovat jako někdo jiný.
+* Tento Rozkazový papír odevzdá v Rozkazovém okně do Rozkazového boxu a tímto se zahájí jeho provedení. Odevzdaný Edikt již nelze upravit!
+* Během vyhodnocování Rozkazových papírů organizátor vyhlásí Edikty:
+   * Pokud se jedná o globální akci ovlivňující mapu, Edikt bude vyhlášen veřejně na konci Rozkazovacího okna a do mapy budou zaznačeny případné změny.
+   * Pokud se jedná o akci, která ovlivňuje jen danou Frakci (typicky stavba Surovinových staveb), a ta proběhla bez problémů, většinou se o ní neinformuje.
+   * Pokud je potřeba, hráč, jehož Frakce provedla Edikt, dostane soukromé, detailní vyhlášení Ediktu. Pokud bude v samotném Ediktu zmíněné, že má soukromé informace získat i někdo jiný, dostanou poté i tito hráčí detailní vyhlášení. (Typicky pokud je nějaký Edikt kriticky neúspěšný.)
+Rozkazový papír
+Rozkazový papír představuje korespondenci mezi delegáty a jejich domovskou Frakcí, ve kterém posílají informace domovské Frakci. Skládá se ze sady Ediktů zapsaných na jeden papír velikosti A4 rozdělených do až 4 sekcí (I,II,III, vojenské):
+
+
+Rozkazový papír lze odevzdávat organizátorovi v rámci Rozkazového okna (typicky hodinu) a to do Rozkazového boxu. Během jednoho okna lze vydat jen 1 rozkaz. V případě odevzdání více rozkazů bude vyhodnocen jen ten 1.
+
+
+Edikty na rozkazu se poté vykonávají zároveň v rámci každé sekce (I,II,III) a sekce se vykonají postupně dle čísla pořadí. Nelze tedy v jedné sekci vydat Edikty, které na sebe vzájemně navazují, ale je třeba myslet na to, že všechny Edikty jedné sekci berou v potaz stav Surovin před zahájením sekce. Edikty v sekci vojenské se vykonají nakonec, sem spadají veškeré vojenské manévry a útoky.
+
+
+Edikt, který při svém vyhodnocení nemá dostupné zdroje, selže a neprovede se.
+
+
+Odevzdané Rozkazové papíry se vyhodnocují v náhodném pořadí a není tak tedy třeba s odevzdáním spěchat.
+
+
+Příklady
+Pokud mám 3 jednotky Armády.
+
+
+LZE v rámci jednoho rozkazu poslat 3 útoky o síle 1 na Města A, B a C.
+
+
+NELZE v rámci jednoho rozkazu poslat 3 útoky o síle 3 - nejprve na A, potom na B a pak na C.
+
+Rozdělení Vojska znamená dělit volné jednotky z přehledu Frakce, ne jednotky z již probíhajících bitev.
+
+
+Typický zpracování rozkazů:
+9:00 - 10:00 - rozkazové okénko
+10:00-11:00 - vyhodnocování rozkazů
+11:00 - vyhlášení výsledků rozkazů
+11:00-12:00 - rozkazové okénko
+________________
+
+
+Jak správně psát/nepsat Edikty
+________________
+Obecné Edikty
+Následující Edikty jsou dostupné všem hráčům:
+Vnitřní
+Edikty zaměřené na rozšíření ekonomiky Frakce. Edikty jsou omezeny Ediktovým limitem Frakce, který zabraňuje nekonečnému škálování. (viz Města)
+Farma
+Konzumuje: 
+1x Pracovní síla 
+1x Nástroje
+
+
+Produkuje: 4x Jídlo
+Pila
+Konzumuje: 
+1x Pracovní síla 
+1x Nástroje
+
+
+Produkuje: 4x Dřevo
+Železný důl
+Konzumuje: 
+1x Pracovní síla 
+1x Nástroje
+
+
+Produkuje: 4x Železo
+Zlatý důl
+Konzumuje: 
+1x Pracovní síla 
+1x Nástroje
+
+
+Produkuje: 4x Zlato
+Magické zřídlo
+Konzumuje: 
+1x Pracovní síla 
+1x Nástroje
+
+
+Produkuje: 4x Magická tekutina
+
+
+
+
+
+
+
+
+Obytná čtvrť
+Konzumuje: 
+1x Jídlo
+1x Dřevo
+
+
+Produkuje: 4x Pracovní síla
+Řemeslník
+Konzumuje: 
+1x Dřevo
+1x Pracovní síla
+1x Železo
+
+
+Produkuje: 4x Nástroje
+Šperkař
+Konzumuje: 
+1x Nástroje
+1x Pracovní síla
+1x Zlato
+
+
+Produkuje: 4x Luxusní zboží
+Alchymista
+Konzumuje: 
+1x Nástroje
+1x Pracovní síla
+1x Magická tekutina
+
+
+Produkuje: 4x Magické předměty
+________________
+Loděnice
+Konzumuje: 
+1x Nástroje
+1x Pracovní síla
+1x Dřevo
+
+
+Produkuje: 4x Lodě
+Kasárny
+Konzumuje: 
+1x Nástroje
+1x Pracovní síla
+1x Zlato
+
+
+Produkuje: 4x Branci
+Univerzita
+Konzumuje: 
+1x Luxusní zboží
+1x Pracovní síla
+1x Magické předměty
+
+
+Produkuje: 4x Učenci
+________________
+Vnější
+Edikty zaměřené na interakci s ostatními Frakcemi a okolním světem.
+Expedice do regionu X
+Využívá: 
+Libovolné množství Surovin a Vojenských jednotek (Armáda, Flotila, Mágové)
+
+
+Produkuje: Příběh
+
+
+Vyšle expedici do regionu, která se pokusí řešit regionální krizi.
+
+
+Aby bylo možné expedici vyhlásit, musí v regionu X probíhat nějaká krize a všechny zúčastněné Frakce musí mít v regionu X alespoň jedno Město (vlastní, okupované nebo vazalizované). (Lze tedy vyslat i z Enklávy.) Do jedné regionální expedice se může zapojit více Frakcí a spojit tak síly.
+
+
+V případě že vznikne v jeden tah více regionálních expedic, dojde k bitvě a krizi bude řešit vítěz.
+
+
+POZOR! Vojenské jednotky použité v expedici jsou dočasně nedostupné pro obranu i útoky a mohou být zabity krizí! 
+
+
+Regionální krize se řeší při vyhodnocení formou sezení s vypravěčem (podobné lokačce, jen vedené), kde zástupci zapojených Frakcí vybírají volby expedice, které mohou být “zamčené” za určitými zdroji expedice. Je tak dobré ji vybavit co nejvíce a nejvšestrannější. 
+
+
+Po skončení sezení s vypravěčem se Edikt zruší a Frakcím se vrátí během expedice nepoužité Suroviny. 
+
+
+Špionáž do Města X
+Využívá: 
+Špionážní body
+
+
+Produkuje: Informace o Městě X
+
+
+Frakce začíná hru se 3 špionážními body.
+
+
+Vyšle špiony, kteří prozkoumají dané Město a zíkají o něm informace. Stojí cenu tolikrát, kolik “skoků” na mapě je cílově Město vzdálené od hranic Frakce. (Lze tedy vyslat i z Enklávy.) Pokud je tedy Město vzdálené 3 “skoky”, špionáž dočasně zkonzumuje 3 špionážní body. Špionážní body se Frakci vracejí na konci Rozkazového okna!
+
+
+________________
+
+
+Obchodní kontrakt Frakcí X a Y
+Edikt pro obchod Surovin mezi Frakcemi. Každá strana specifikuje, jaké Suroviny chce protistraně poskytnout, a ta s nimi poté může nakládat jako s vlastními. Edikt musí podepsat obě Frakce, ale vypovědět Edikt jde i jednostranně. Stačí napsat na rozkaz jedné ze stran, jedno které. Obchodovat lze pouze s Frakcemi sousedícími s Dominiem!
+Obranný pakt Frakcí X a Y
+Edikt, kterým se Frakce X a Y zavazují vzájemně si pomoct v případě napadení. V případě napadení jedné z Frakcí se tak bude obranné Vojsko automaticky mobilizovat z kapacit obou Frakcí. Primárně se bude Vojsko mobilizovat z napadené Frakce a až poté z jejich spojenců. Spojenci v obranném paktu nasazují své volné jednotky stejným způsobem jako napadená Frakce — tj. pouze aby dorovnala útočníka s tím, že nasazuje prioritně Armádu, poté Flotilu (v přístavech) a až nakonec Mágy.
+
+
+Edikt musí podepsat obě Frakce, ale vypovědět Edikt jde i jednostranně. Stačí napsat na rozkaz jedné ze stran, jedno které. Obranný pakt lze uzavírat pouze s Frakcemi sousedícími s Dominiem!
+
+
+Vojsko se musí být schopné k bitvě dopravit! 
+Pokud se obránci musí mobilizovat ke spojenci přes moře, opět platí limit že nelze mobilizovat větší Armádu než Flotilu. Pozor! Počítají se zde pouze lodě Frakce která se pohybuje, je tak důležité mít dost lodí pokud chci bránit spojence přes vodu.
+
+
+
+
+
+
+
+
+________________
+Vojenské
+Edikty zaměřené na “agresivní” interakci s ostatními Frakcemi a okolním světem. Tyto Edikty se píší vždy jen do poslední sekce Rozkazového papíru.
+Vojenský manévr na Město X
+Využívá: 
+Xx Armáda
+Yx Flotila
+Zx Mágové
+
+
+Produkuje: Válku!
+
+
+Vyšle Vojenskou sílu s cílem dobít dané Město. Útok lze vést pouze na Město, které sousedí s Dominiem!
+
+
+Pokud je sousedství přes vodu, nemůže se útoku účastnit větší Armáda než Flotila.
+
+
+Pokud se bojuje o vnitrozemní region, nemůže se útoku logicky účastnit Flotila.
+
+Pokud se útoku účastní pouze Mágové, může být zacílen kamkoliv (umí cestovat magicky). 
+
+
+Vojsko se utká s obránci Města (mobilizují se z volného Vojska cílové Frakce + přirozené obrany Města) a pokusí se jej dobít. Pokud neuspěje, utrpí ztráty a opět se stáhne a rozpustí. Pokud ale zvítězí a dobude nepřátelské Město, naskytnou se tři možnosti:
+
+
+* Okupace - Na mapě je reprezentováno vlaječkami jak originálního obránce ve Městě, tak útočníkovi armády před Městem.
+Pro okupanta
+	Pro okupovaného
+	Město nezvyšuje Ediktový limit.
+Město nezvyšuje produkci.
+Nezvyšuje velikost Frakce.
+Počítá se jako území Frakce.
+	Město nezvyšuje Ediktový limit.
+Město nezvyšuje produkci.
+Nezvyšuje velikost Frakce.
+Nepočítá se jako území Frakce.
+	
+
+* Převzetí - Útočník plně převezme Město a kontrolu nad ním a Vojsko se rozpustí.
+* Osvobození - Útočník dobije Město a opustí jej a rozpustí Vojsko, Město se pak stane zpátky neutrální.
+
+
+Je dobré specifikovat preferovaný výsledek. V případě, že výsledek specifikován nebude, provede se Okupace. 
+
+
+Podpora útoku Frakce X na Město Y
+Využívá: 
+Xx Armáda + 1x Jídlo za každé X/3 Armády
+Yx Flotila
+Zx Mágové 
+
+
+Produkuje: Válku!
+
+
+Vyšle Vojenskou sílu s cílem podpořit útok uvedené Frakce na danné Město. 
+
+Vojsko se musí být schopné k bitvě dopravit. 
+
+
+Lze podporovat pouze Frakce sousedící s Dominiem (průchodem přes jejich území) NEBO útoky na Města sousedící s Dominiem.
+
+
+Pokud je podpora vedena přes vodu, nemůže se útoku účastnit větší Armáda než Flotila.
+
+
+Pokud se podporuje boj o vnitrozemní region, nemůže se útoku logicky účastnit Flotila.
+
+Pokud se podpory účastní pouze Mágové, může být zacílena kamkoliv (umí cestovat magicky). 
+
+
+Vojsko se utká s obránci Města (mobilizují se z volného Vojska cílové Frakce + přirozené obrany Města) a pokusí se jej dobít. Pokud neuspěje, utrpí ztráty a opět se stáhne a rozpustí. Pokud zvítězí, Vojsko se stáhne a rozpustí.
+Ukončení okupace Města X
+Ukončí okupaci Města. Na výběr je ze tří možností:
+* Převzetí - Okupační Vojsko převezme kontrolu nad Městem a začlení jej do Frakce.
+* Osvobození - Okupační Vojsko vyžene z Města jeho vládu a vrátí jej do rukou lidu. Město se tak stane neutrálním.
+* Stáhnutí - Okupační Vojsko se stáhne a Město se vrátí plně pod kontrolu původního majitele. 
+
+
+Je dobré specifikovat preferovaný výsledek. V případě, že výsledek specifikován nebude, se provede Stáhnutí. 
+Obchodní převzetí Města X
+Využívá: 
+Suroviny dané požadavky Města
+
+
+Tento Edikt umožňuje obchodní převzetí neutrálního Města. Obchodně jde převzít pouze neutrální Město sousedící s Dominiem. Po vyhodnocení se Edikt zruší a Suroviny se tak vrátí Frakci.
+________________
+Vazalizace a Impéria
+Frakce mohou mít vazaly. Vazalizace probíhá buď domluvou (Obecný Edikt) nebo násilně (Vojenský Edikt). 
+
+
+Takto vznikne Impérium, které je označené na mapě vlajkami vládnoucí Frakce i vlajkou Vazala. 
+
+
+Vazalizace nezvedá Ediktový limit hlavní Frakce.
+
+
+Vazalové nemohou uzavírat obranné pakty s Frakcemi, které jsou mimo Imperium a vazalizací se všechny takové pakty, které mají, ruší. Stejně tak Vazalové nemohou napadnout vládnoucí Frakci.
+
+
+Vazalové v rámci Imperia mohou mít mezi sebou Obranné pakty i spolu volně válčit. 
+Imperiální edikty - Obecné
+Diplomatická vazalizace Frakce X
+Vasalizuje Frakci X která tak přijme vládu nového pána. Vazal se zavazuje odvádět hlavní Frakci Suroviny dohodnuté v tomto Ediktu a hlavní Frakce se zavazuje Vazala bránit před všemi nepřáteli mimo imperium (Obranný pakt).
+
+
+Podmínky vazalizace (odváděné Suroviny) lze za souhlasu obou stran kdykoliv změnit.
+Imperiální audit vazala X
+Hlavní Frakce může jednou za rozkazové okno vyhlásit tento Edikt. Během vyhodnocování Ediktů jí je pak poskytnut aktuální stav Surovin a vyhlášených Ediktů daného Vazala.
+Imperiální edikty - Vojenské
+Násilná vazalizace Frakce X
+Vyšle Vojsko na hlavní Město Frakce (musí se k němu “prokousat” skrze okupace nebo převzetí Měst). Ta se na něm bude bránit celou svou silou. Pokud hlavní Město padne, stane se Frakce Vazalem, jen si hlavní Frakce může diktovat Surovinový odvod dle svého přání na základě aktuálního stavu Surovin Vazala. Hlavní Frakce se ale zavazuje Vazala bránit před všemi nepřáteli mimo imperium (Obranný pakt).
+
+
+Veškerá okupované Města se také Vazalovi navrátí.
+
+
+Pomoci stejného Ediktu lze změnit podmínky (odváděné Suroviny) i bez souhlasu vazala. Hlavní Frakce ovšem musí pro úspěšnou změnu “daní” vojensky opět dobít hlavní Město Vazala, který se bude snažit tyranickým změnám odolat stejně jako při klasickém dobytí. Do této obrany ovšem nemůže povolat své obranné spojence, kteří jsou také Vazali.
+Vzpoura
+Vazal se pomocí tohoto Ediktu vzbouří proti hlavní Frakci, vyhlásí nezávislost a vojensky se střetne s jejími silami (verbovanými z volného Vojska, bez účasti ostatních Vazalů) o své hlavní Město. Ke Vzpouře se, na straně vzbouřeného, vždy také připojí posádka města a to celou svojí silou! Úspěšným vzbouřením již Vazal není součástí Imperia, a tak se ruší všechny jeho Obranné pakty. Jedinou výjimkou je, pokud se jedním rozkazem vzbouří více Vazalů, kteří spolu mají uzavřené Obranné pakty.
+
+
+[a]Vstupní, výstupní nebo dle ediktu?
+[b]Můžeš postavit vždycky minimálně 2x každou ediktovou budovu (jakože na výrobu dřeva, nástrojů etc..)
+[c]Zupa. Jsee to prohnal GPT a tato sekce kladla nejvíc otázek.
+[d]Tady to bude chtí opravdu pěkný a dobrý příklad napsat. :)
+[e]Příklady bych napickoval reálně situace z testu co budeme dělat. Tak bych tu komentář nechal a jak uděláme test tak doplním a komentář uzavřu.
+[f]I když ne, to udhalí hráčům intel, udělám anonymní příklady
+[g]Nakolik nejméne může klesnout?
+[h]Neomezeně, ale etiketový limit jako celek nemůže jít pod 2 (viz předchozí věta)
+[i]Jde o to, že když někdo získá velikost frakce 21, tak by to znamenalo, že se limit sníži o 1. Což je nepravděpodobně, takže jde mi spíše o číslo, ke kterému se reálně můžeme dostat při hře. Případně vyřešíme na 1. testu.
+[j]Teoreticky možné, ale prakticky se ti mnohem dřív položí celá ekonomika :D
+[k]K jakému číslu se dostaneme?
+[l]Nerozumím, 2* ediktový limit kde ediktový limit je podle měst (každé dává (20-velikost frakce) svých surovin) - reálně se to samo počítá v tom excelu.
+[m]Co když zíkám město, které mi zvedne ediktový limit? Budeme to přepočítávat my, nebo si to hráči musí hlídat sami, že mají někde postavenou budovu, která má ale 50% produkci? Otázka pak je, nemáš limit= nestavíš?
+[n]Je to celé pěkně vidět v tom surovinovém excelu který to i počítá, my zadáme do excelu jenom jméno města a jaké suroviny dává.
+[o]Ok, toto a bod předtím si asi nějlíp ukážeme na testu a pak to musíme hezky napsat do příkladu :D
+[p]jj, připravím anonymní příklady viz víše a uvidíme.
