@@ -58,6 +58,10 @@ public sealed class FactionState
 
     public Dictionary<UnitType, int> Units { get; init; } = [];
 
+    public int AppliedCityGoldBonus { get; set; }
+
+    public int AppliedCityWorkforceBonus { get; set; }
+
     public bool IsInEconomicCollapse { get; set; }
 }
 
@@ -184,6 +188,8 @@ public sealed record ExternalEdict : EdictBase
     public ResourceType? Resource { get; init; }
 
     public int Amount { get; init; }
+
+    public bool IsInboundToIssuer { get; init; }
 }
 
 public enum MilitaryEdictType
@@ -204,4 +210,16 @@ public sealed record MilitaryEdict : EdictBase
     public string? TargetCityId { get; init; }
 
     public string? SupportedFactionId { get; init; }
+
+    public int RequestedArmy { get; init; }
+
+    public int RequestedFleet { get; init; }
+
+    public int RequestedMages { get; init; }
+
+    public int CommittedArmy { get; set; }
+
+    public int CommittedFleet { get; set; }
+
+    public int CommittedMages { get; set; }
 }

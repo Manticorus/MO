@@ -42,14 +42,14 @@ Principles:
 - [X] Unit tests for validator behavior.
 
 ## M4 — Turn resolution pipeline (sections + logs)
-- [ ] Implement TurnResolver.ResolveTurn(state, ordersByFaction, seed):
+- [X] Implement TurnResolver.ResolveTurn(state, ordersByFaction, seed):
       - shuffle faction order by seed
       - resolve section I (snapshot)
       - resolve section II (snapshot)
       - resolve section III (snapshot)
       - collect military intents (do not fight yet)
       - generate log entries
-- [ ] Unit test: deterministic output with fixed seed.
+- [X] Unit test: deterministic output with fixed seed.
 
 ## M5 — Military resolution + battles (NO geography restrictions)
 - [ ] Implement battle resolution:

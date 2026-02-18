@@ -216,7 +216,10 @@ public class M3TypedEdictModelTests
             Section = EdictSection.Military,
             Type = MilitaryEdictType.Attack,
             SourceCityId = "c1",
-            TargetCityId = "c2"
+            TargetCityId = "c2",
+            RequestedArmy = 1,
+            RequestedFleet = 0,
+            RequestedMages = 0
         };
 
         var typedInternal = Assert.IsType<InternalProductionEdict>(internalEdict);
@@ -267,7 +270,10 @@ public class M3EdictValidatorTests
             Section = EdictSection.Military,
             Type = MilitaryEdictType.Attack,
             SourceCityId = "c1",
-            TargetCityId = "c2"
+            TargetCityId = "c2",
+            RequestedArmy = 1,
+            RequestedFleet = 0,
+            RequestedMages = 0
         };
 
         var blocked = EdictValidator.Validate(militaryEdict, collapseFaction);
@@ -322,6 +328,27 @@ public class M3EdictValidatorTests
     }
 
     [Fact]
+
+
+    [Fact]
+    public void Validate_MilitaryRejectsNegativeRequestedUnits()
+    {
+        var faction = new FactionState { FactionId = "aelthuun" };
+
+        var invalid = new MilitaryEdict
+        {
+            IssuingFactionId = "aelthuun",
+            Section = EdictSection.Military,
+            Type = MilitaryEdictType.Attack,
+            TargetCityId = "c2",
+            RequestedArmy = -1,
+            RequestedFleet = 0,
+            RequestedMages = 0
+        };
+
+        var errors = EdictValidator.Validate(invalid, faction);
+        Assert.Contains(errors, e => e.Message.Contains("cannot be negative", StringComparison.OrdinalIgnoreCase));
+    }
     public void Validate_ReportsParameterIssues()
     {
         var faction = new FactionState
@@ -387,5 +414,362 @@ public class EdictOutputCalculatorTests
         Assert.Equal(6, EdictOutputCalculator.GetInternalEdictOutputPerExecution("aelthuun", ResourceType.MagicItems));
         Assert.Equal(7, EdictOutputCalculator.GetInternalEdictOutputPerExecution("mar-rhazun", ResourceType.Iron));
         Assert.Equal(8, EdictOutputCalculator.GetInternalEdictOutputPerExecution("qal-asar", ResourceType.MagicItems));
+    }
+}
+
+public class M4TurnResolverTests
+{
+    [Fact]
+    public void ResolveTurn_UsesFixedSeedForDeterministicOrderAndLogs()
+    {
+        var state = new GameState
+        {
+            TurnNumber = 4,
+            Factions =
+            [
+                new FactionState { FactionId = "aelthuun" },
+                new FactionState { FactionId = "elyndar" }
+            ]
+        };
+
+        var ordersByFaction = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["aelthuun"] =
+            [
+                new InternalProductionEdict
+                {
+                    IssuingFactionId = "aelthuun",
+                    Section = EdictSection.I,
+                    EdictName = "Foundry",
+                    InputRequirements =
+                    [
+                        new EdictResourceRequirement
+                        {
+                            Resource = ResourceType.Iron,
+                            Amount = 1,
+                            Usage = EdictResourceUsage.Consumed
+                        }
+                    ],
+                    Outputs =
+                    [
+                        new ResourceAmount
+                        {
+                            Resource = ResourceType.Tools,
+                            Amount = 1
+                        }
+                    ],
+                    ExecutionCount = 1
+                }
+            ],
+            ["elyndar"] =
+            [
+                new MilitaryEdict
+                {
+                    IssuingFactionId = "elyndar",
+                    Section = EdictSection.Military,
+                    Type = MilitaryEdictType.Attack,
+                    SourceCityId = "c2",
+                    TargetCityId = "c1",
+                    RequestedArmy = 10,
+                    RequestedFleet = 2,
+                    RequestedMages = 1
+                }
+            ]
+        };
+
+        var first = TurnResolver.ResolveTurn(state, ordersByFaction, seed: 1337);
+        var second = TurnResolver.ResolveTurn(state, ordersByFaction, seed: 1337);
+
+        Assert.Equal(first.ShuffledFactionOrder, second.ShuffledFactionOrder);
+        Assert.Equal(first.LogEntries, second.LogEntries);
+        Assert.Equal(1, first.MilitaryIntents.Count);
+        Assert.Equal("Resolve turn 4 with seed 1337.", first.LogEntries[0]);
+        Assert.Equal(1337, first.UpdatedState.Seed);
+
+        var factionStartIndices = first.ShuffledFactionOrder.ToDictionary(
+            factionId => factionId,
+            factionId => first.LogEntries.IndexOf($"Faction {factionId}: begin resolution."));
+
+        foreach (var factionId in first.ShuffledFactionOrder)
+        {
+            var startIndex = factionStartIndices[factionId];
+            Assert.True(startIndex >= 0);
+
+            Assert.True(first.LogEntries.IndexOf($"Faction {factionId}: section I snapshot start.") > startIndex);
+            Assert.True(first.LogEntries.IndexOf($"Faction {factionId}: section II snapshot start.") > startIndex);
+            Assert.True(first.LogEntries.IndexOf($"Faction {factionId}: section III snapshot start.") > startIndex);
+        }
+
+        var firstFaction = first.ShuffledFactionOrder[0];
+        var secondFaction = first.ShuffledFactionOrder[1];
+        var firstFactionSectionIII = first.LogEntries.IndexOf($"Faction {firstFaction}: section III snapshot start.");
+        var secondFactionSectionI = first.LogEntries.IndexOf($"Faction {secondFaction}: section I snapshot start.");
+        Assert.True(firstFactionSectionIII < secondFactionSectionI);
+    }
+}
+
+public class M4TurnResolverStateApplicationTests
+{
+    [Fact]
+    public void ResolveTurn_AppliesInternalExternalAndSpecialEdicts_AndPreparesBattleStats()
+    {
+        var state = new GameState
+        {
+            TurnNumber = 8,
+            Factions =
+            [
+                new FactionState
+                {
+                    FactionId = "aurumbrae",
+                    Resources =
+                    {
+                        [ResourceType.Workforce] = 4,
+                        [ResourceType.Tools] = 0,
+                        [ResourceType.Gold] = 0
+                    },
+                    Units =
+                    {
+                        [UnitType.Army] = 3,
+                        [UnitType.Fleet] = 1,
+                        [UnitType.Mages] = 0
+                    }
+                },
+                new FactionState
+                {
+                    FactionId = "elyndar",
+                    Resources =
+                    {
+                        [ResourceType.Workforce] = 1,
+                        [ResourceType.Tools] = 0,
+                        [ResourceType.Gold] = 0
+                    },
+                    Units =
+                    {
+                        [UnitType.Army] = 2,
+                        [UnitType.Fleet] = 0,
+                        [UnitType.Mages] = 1
+                    }
+                }
+            ],
+            Cities =
+            [
+                new CityState
+                {
+                    CityId = "c1",
+                    OwnerFactionId = "elyndar",
+                    GarrisonStrength = 5
+                }
+            ]
+        };
+
+        var orders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["aurumbrae"] =
+            [
+                new InternalProductionEdict
+                {
+                    IssuingFactionId = "aurumbrae",
+                    Section = EdictSection.I,
+                    EdictName = "Workshop",
+                    InputRequirements =
+                    [
+                        new EdictResourceRequirement
+                        {
+                            Resource = ResourceType.Workforce,
+                            Amount = 1,
+                            Usage = EdictResourceUsage.Consumed
+                        }
+                    ],
+                    Outputs =
+                    [
+                        new ResourceAmount
+                        {
+                            Resource = ResourceType.Tools,
+                            Amount = 1
+                        }
+                    ],
+                    ExecutionCount = 1
+                },
+                new ExternalEdict
+                {
+                    IssuingFactionId = "aurumbrae",
+                    Section = EdictSection.II,
+                    Type = ExternalEdictType.TradeContract,
+                    TargetFactionId = "elyndar",
+                    Resource = ResourceType.Workforce,
+                    Amount = 5
+                },
+                new MilitaryEdict
+                {
+                    IssuingFactionId = "aurumbrae",
+                    Section = EdictSection.Military,
+                    Type = MilitaryEdictType.Attack,
+                    TargetCityId = "c1",
+                    RequestedArmy = 10,
+                    RequestedFleet = 2,
+                    RequestedMages = 1
+                }
+            ]
+        };
+
+        var result = TurnResolver.ResolveTurn(state, orders, seed: 99);
+
+        var aurumbrae = Assert.Single(result.UpdatedState.Factions.Where(f => f.FactionId == "aurumbrae"));
+        var elyndar = Assert.Single(result.UpdatedState.Factions.Where(f => f.FactionId == "elyndar"));
+
+        Assert.Equal(-2, aurumbrae.Resources[ResourceType.Workforce]); // 4 - 1 (internal) - 5 (trade)
+        Assert.Equal(4, aurumbrae.Resources[ResourceType.Tools]);
+        Assert.Equal(1, aurumbrae.Resources[ResourceType.Gold]); // aurumbrae export bonus (5 / 5)
+        Assert.Equal(6, elyndar.Resources[ResourceType.Workforce]);
+        Assert.True(aurumbrae.IsInEconomicCollapse);
+
+        var preparedBattle = Assert.Single(result.PreparedBattles);
+        Assert.Equal("c1", preparedBattle.TargetCityId);
+        Assert.Equal("elyndar", preparedBattle.DefenderFactionId);
+        Assert.Equal(5, preparedBattle.DefenderGarrisonStrength);
+
+        var attack = Assert.Single(preparedBattle.Attacks);
+        Assert.Equal("aurumbrae", attack.AttackerFactionId);
+        Assert.Equal(3, attack.AvailableArmy);
+        Assert.Equal(1, attack.AvailableFleet);
+        Assert.Equal(0, attack.AvailableMages);
+        Assert.Equal(3, attack.CommittedArmy);
+        Assert.Equal(1, attack.CommittedFleet);
+        Assert.Equal(0, attack.CommittedMages);
+    }
+}
+
+
+public class M4TurnResolverRuleFixTests
+{
+    [Fact]
+    public void ResolveTurn_UsesDirectionalTradeAndAurumbræExportBonusOnlyWhenExporting()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState { FactionId = "aurumbrae", Resources = { [ResourceType.Wood] = 0, [ResourceType.Gold] = 0 } },
+                new FactionState { FactionId = "ordo-solis", Resources = { [ResourceType.Wood] = 10, [ResourceType.Gold] = 0 } }
+            ]
+        };
+
+        var inboundOrders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["aurumbrae"] =
+            [
+                new ExternalEdict
+                {
+                    IssuingFactionId = "aurumbrae",
+                    Section = EdictSection.II,
+                    Type = ExternalEdictType.TradeContract,
+                    TargetFactionId = "ordo-solis",
+                    Resource = ResourceType.Wood,
+                    Amount = 5,
+                    IsInboundToIssuer = true
+                }
+            ]
+        };
+
+        var result = TurnResolver.ResolveTurn(state, inboundOrders, 7);
+        var aur = Assert.Single(result.UpdatedState.Factions.Where(x => x.FactionId == "aurumbrae"));
+        var ord = Assert.Single(result.UpdatedState.Factions.Where(x => x.FactionId == "ordo-solis"));
+
+        Assert.Equal(5, aur.Resources[ResourceType.Wood]);
+        Assert.Equal(5, ord.Resources[ResourceType.Wood]);
+        Assert.Equal(0, aur.Resources[ResourceType.Gold]);
+
+        var outboundOrders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["aurumbrae"] =
+            [
+                new ExternalEdict
+                {
+                    IssuingFactionId = "aurumbrae",
+                    Section = EdictSection.II,
+                    Type = ExternalEdictType.TradeContract,
+                    TargetFactionId = "ordo-solis",
+                    Resource = ResourceType.Wood,
+                    Amount = 5
+                }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, outboundOrders, 8);
+        Assert.Equal(1, aur.Resources[ResourceType.Gold]);
+    }
+
+    [Fact]
+    public void ResolveTurn_AppliesCityOwnershipBonusesAsPersistentAdjustments()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState { FactionId = "ordo-solis", Resources = { [ResourceType.Gold] = 0 } },
+                new FactionState { FactionId = "malvethar", Resources = { [ResourceType.Gold] = 0, [ResourceType.Workforce] = 0 } }
+            ],
+            Cities =
+            [
+                new CityState { CityId = "a", OwnerFactionId = "ordo-solis", GarrisonStrength = 1 },
+                new CityState { CityId = "b", OwnerFactionId = "malvethar", GarrisonStrength = 1 }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, new Dictionary<string, IReadOnlyList<EdictBase>>(), 1);
+        var ordo = state.Factions.Single(x => x.FactionId == "ordo-solis");
+        var mal = state.Factions.Single(x => x.FactionId == "malvethar");
+        Assert.Equal(10, ordo.Resources[ResourceType.Gold]);
+        Assert.Equal(5, mal.Resources[ResourceType.Gold]);
+        Assert.Equal(5, mal.Resources[ResourceType.Workforce]);
+
+        state.Cities[0].OwnerFactionId = "malvethar";
+        TurnResolver.ResolveTurn(state, new Dictionary<string, IReadOnlyList<EdictBase>>(), 2);
+        Assert.Equal(0, ordo.Resources[ResourceType.Gold]);
+        Assert.Equal(10, mal.Resources[ResourceType.Gold]);
+        Assert.Equal(10, mal.Resources[ResourceType.Workforce]);
+    }
+
+    [Fact]
+    public void ResolveTurn_TaznarBonusAppliesOnlyForMagickeZridlo()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState
+                {
+                    FactionId = "taznar",
+                    Resources = { [ResourceType.MagicalLiquid] = 2, [ResourceType.Conscripts] = 0 }
+                }
+            ]
+        };
+
+        var orders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["taznar"] =
+            [
+                new InternalProductionEdict
+                {
+                    IssuingFactionId = "taznar",
+                    Section = EdictSection.I,
+                    EdictName = "Magické zřídlo",
+                    InputRequirements = [ new EdictResourceRequirement { Resource = ResourceType.MagicalLiquid, Amount = 1, Usage = EdictResourceUsage.Consumed } ],
+                    Outputs = [ new ResourceAmount { Resource = ResourceType.Wood, Amount = 1 } ]
+                },
+                new InternalProductionEdict
+                {
+                    IssuingFactionId = "taznar",
+                    Section = EdictSection.I,
+                    EdictName = "Some other spring",
+                    InputRequirements = [ new EdictResourceRequirement { Resource = ResourceType.MagicalLiquid, Amount = 1, Usage = EdictResourceUsage.Consumed } ],
+                    Outputs = [ new ResourceAmount { Resource = ResourceType.Wood, Amount = 1 } ]
+                }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, orders, 11);
+        var taznar = Assert.Single(state.Factions);
+        Assert.Equal(1, taznar.Resources[ResourceType.Conscripts]);
     }
 }
