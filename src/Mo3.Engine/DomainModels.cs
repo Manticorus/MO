@@ -117,3 +117,91 @@ public sealed class GameState
 
     public List<TradePact> TradePacts { get; init; } = [];
 }
+
+public enum EdictSection
+{
+    I,
+    II,
+    III,
+    Military
+}
+
+public abstract record EdictBase
+{
+    public required string IssuingFactionId { get; init; }
+
+    public required EdictSection Section { get; init; }
+
+    public bool IsCancellation { get; init; }
+}
+
+public sealed record ResourceAmount
+{
+    public required ResourceType Resource { get; init; }
+
+    public int Amount { get; init; }
+}
+
+public enum EdictResourceUsage
+{
+    Consumed,
+    RequiredAvailable
+}
+
+public sealed record EdictResourceRequirement
+{
+    public required ResourceType Resource { get; init; }
+
+    public int Amount { get; init; }
+
+    public EdictResourceUsage Usage { get; init; }
+}
+
+public sealed record InternalProductionEdict : EdictBase
+{
+    public required string EdictName { get; init; }
+
+    public List<EdictResourceRequirement> InputRequirements { get; init; } = [];
+
+    public List<ResourceAmount> Outputs { get; init; } = [];
+
+    public int ExecutionCount { get; init; } = 1;
+}
+
+public enum ExternalEdictType
+{
+    TradeContract,
+    DefensivePact,
+    Spy
+}
+
+public sealed record ExternalEdict : EdictBase
+{
+    public required ExternalEdictType Type { get; init; }
+
+    public required string TargetFactionId { get; init; }
+
+    public ResourceType? Resource { get; init; }
+
+    public int Amount { get; init; }
+}
+
+public enum MilitaryEdictType
+{
+    Attack,
+    SupportAttack,
+    EndOccupation,
+    Takeover,
+    Liberation
+}
+
+public sealed record MilitaryEdict : EdictBase
+{
+    public required MilitaryEdictType Type { get; init; }
+
+    public string? SourceCityId { get; init; }
+
+    public string? TargetCityId { get; init; }
+
+    public string? SupportedFactionId { get; init; }
+}
