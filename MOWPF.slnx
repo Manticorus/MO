@@ -1,3 +1,5 @@
 <Solution>
-  <Project Path="MO/MO.csproj" />
+  <Project Path="src/Mo3.Engine/Mo3.Engine.csproj" />
+  <Project Path="src/Mo3.App/Mo3.App.csproj" />
+  <Project Path="tests/Mo3.Tests/Mo3.Tests.csproj" />
 </Solution>
