@@ -1,0 +1,269 @@
+Ael’thuun
+  Jídlo: 0
+  Dřevo: 0
+  Železo: 0
+  Zlato: 1
+  Magická tekutina: 1
+  Pracovní Síla: 3
+  Nástroje: 2
+  Luxusní zboží: 0
+  Magické předměty: -1
+  Lodě: 0
+  Branci: 0
+  Učenci: -1
+  Startovní edikty (CNT):
+    - Hromotepec: 1
+    - Aetherová Laboratoř: 1
+    - Nebeská Knihovna: 1
+
+Aurumbræ
+  Jídlo: 0
+  Dřevo: 1
+  Železo: 0
+  Zlato: 1
+  Magická tekutina: 0
+  Pracovní Síla: 0
+  Nástroje: 2
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 6
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Chmelařství: 1
+    - Měšťanské Domy: 1
+    - Ležákový Pivovar: 1
+
+Dracogallus
+  Jídlo: 0
+  Dřevo: 0
+  Železo: 0
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 2
+  Luxusní zboží: 1
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 4
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Prachové Varny: 1
+    - Dračí Výhně: 1
+    - Psionická Lóže: 1
+
+Elyndar
+  Jídlo: 0
+  Dřevo: 0
+  Železo: 0
+  Zlato: 1
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 3
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 3
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Selské Hospodářství: 1
+    - Panská Pila: 1
+    - Rytířský Hrádek: 1
+
+Kame no Kaizoku
+  Jídlo: 0
+  Dřevo: 1
+  Železo: 0
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 3
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 3
+  Branci: 0
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Rýžové Terasy: 1
+    - Kanna-ba: 1
+    - Nipponské Loděnice: 1
+
+Malvethar
+  Jídlo: 1
+  Dřevo: 1
+  Železo: 0
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 0
+  Nástroje: 2
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 3
+  Branci: 3
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Pirátské Doupě: 1
+    - Slumy Otroků: 1
+    - Drogová Laboratoř: 1
+
+Mar’Rhazûn
+  Jídlo: 0
+  Dřevo: 1
+  Železo: 0
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 0
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 6
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Krvavá Štola: 1
+    - Posedlý Důl: 1
+    - Démonické Hutě: 1
+
+Morr’ghuun
+  Jídlo: 0
+  Dřevo: 0
+  Železo: 1
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 0
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 6
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Mušlový Háj: 1
+    - Chaluhový Lis: 1
+    - Perleťář: 1
+
+Ooruun
+  Jídlo: 0
+  Dřevo: 1
+  Železo: 1
+  Zlato: 1
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 0
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 4
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Jačí Stádo: 1
+    - Kamenotepec: 1
+    - Ordu Válečníků: 1
+
+Ordo Solis
+  Jídlo: 0
+  Dřevo: 1
+  Železo: 1
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 0
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 5
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Řádové Polnosti: 1
+    - Kovárna Řádu: 1
+    - Hrádek Rytířů Slunce: 1
+
+Qal Asar
+  Jídlo: 0
+  Dřevo: 1
+  Železo: 1
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 0
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 2
+  Branci: 2
+  Učenci: 1
+  Startovní edikty (CNT):
+    - Magická Destilerka: 1
+    - Elfí Kovárna: 1
+    - Quelský Alchymista: 1
+
+Rudá flotila
+  Jídlo: 1
+  Dřevo: 2
+  Železo: 0
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 0
+  Nástroje: 2
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 5
+  Branci: 0
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Kasíno: 1
+    - Lóže Nekromancerů: 1
+    - Upíří Loděnice: 1
+
+S.O.S.
+  Jídlo: 0
+  Dřevo: 0
+  Železo: 0
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 3
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 4
+  Branci: 0
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Elfí Háj: 1
+    - Elfí Zahrady: 1
+    - Elfí Loděnice: 1
+
+Shoal
+  Jídlo: 0
+  Dřevo: 1
+  Železo: 0
+  Zlato: 0
+  Magická tekutina: 0
+  Pracovní Síla: 0
+  Nástroje: 2
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 7
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Řasové Plantáže: 1
+    - Perlová Farma: 1
+    - Korálové Vily: 1
+
+Taznar
+  Jídlo: 0
+  Dřevo: 0
+  Železo: 0
+  Zlato: 1
+  Magická tekutina: 0
+  Pracovní Síla: 3
+  Nástroje: 3
+  Luxusní zboží: 0
+  Magické předměty: 0
+  Lodě: 0
+  Branci: 3
+  Učenci: 0
+  Startovní edikty (CNT):
+    - Otrocká Pila: 1
+    - Obětní Oltáře: 1
+    - Chrám Krve: 1
