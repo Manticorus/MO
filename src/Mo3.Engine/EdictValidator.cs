@@ -153,6 +153,11 @@ public static class EdictValidator
 
                 break;
         }
+
+        if (edict.RequestedArmy < 0 || edict.RequestedFleet < 0 || edict.RequestedMages < 0)
+        {
+            errors.Add(new EdictValidationError { Message = "Requested military units cannot be negative." });
+        }
     }
 
     private static void ValidateAmounts(
