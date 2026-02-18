@@ -1,3 +1,5 @@
+Startovní suroviny a edikty frakcí. Edikty mají speciální jména a odpovídají silným surovinám frakcí.
+
 Ael’thuun
   Jídlo: 0
   Dřevo: 0

@@ -51,6 +51,23 @@ Ensure `.gitignore` includes these.
 - App: `src/Mo3.App/` (WPF + MVVM)
 - Tests: `tests/Mo3.Tests/` (xUnit)
 
+## Documentation (source of truth)
+Project rules and domain documentation live in the `Doc/` folder as `.txt` files.
+
+Rules source of truth:
+- `Doc/MO3 - Herní pravidla a mechaniky.txt`
+- `Doc/MO3 - Příběh.txt`
+- `Doc/START`
+
+Instructions:
+- Before implementing or changing any resolver logic, read the relevant docs in `Doc/`.
+- If implementation behavior conflicts with docs, the docs win.
+- If the docs are ambiguous:
+  - choose the most literal interpretation,
+  - add a clear log entry describing the assumption,
+  - and add a unit test that locks the chosen behavior.
+- Do not “invent” new rules beyond the docs + `SPEC.md`.
+
 ## Output format
 At the end of each task, output:
 - Files changed/added
