@@ -31,15 +31,15 @@ Principles:
 - [X] Unit tests with a small sample setup.
 
 ## M3 — Typed edicts + validation layer
-- [ ] Create typed edict models:
+- [X] Create typed edict models:
       Internal (production)
       External (trade contract, defensive pact, spy, etc.)
       Military (attack, support attack, end occupation, takeover, liberation, etc.)
-- [ ] Implement EdictValidator:
+- [X] Implement EdictValidator:
       - economic collapse restriction (only trade allowed)
       - parameter validation (missing target, negative amounts, etc.)
       - NOTE: no adjacency validation (MVP stub!)
-- [ ] Unit tests for validator behavior.
+- [X] Unit tests for validator behavior.
 
 ## M4 — Turn resolution pipeline (sections + logs)
 - [ ] Implement TurnResolver.ResolveTurn(state, ordersByFaction, seed):
