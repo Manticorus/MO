@@ -1,12 +1,88 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{695C7AC0-C907-EC0D-0217-EEDE31D0916B}|src\\Mo3.App\\Mo3.App.csproj|c:\\users\\jiric\\source\\repos\\mo\\mo\\src\\mo3.app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695C7AC0-C907-EC0D-0217-EEDE31D0916B}|src\\Mo3.App\\Mo3.App.csproj|solutionrelative:src\\mo3.app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{695C7AC0-C907-EC0D-0217-EEDE31D0916B}|src\\Mo3.App\\Mo3.App.csproj|c:\\users\\jiric\\source\\repos\\mo\\mo\\src\\mo3.app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{695C7AC0-C907-EC0D-0217-EEDE31D0916B}|src\\Mo3.App\\Mo3.App.csproj|solutionrelative:src\\mo3.app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EECA77C0-A08B-A205-4454-C4CB964E54C9}|tests\\Mo3.Tests\\Mo3.Tests.csproj|c:\\users\\jiric\\source\\repos\\mo\\mo\\tests\\mo3.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EECA77C0-A08B-A205-4454-C4CB964E54C9}|tests\\Mo3.Tests\\Mo3.Tests.csproj|solutionrelative:tests\\mo3.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21BA9264-769A-B5CE-EFCB-C49507427D33}|src\\Mo3.Engine\\Mo3.Engine.csproj|c:\\users\\jiric\\source\\repos\\mo\\mo\\src\\mo3.engine\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21BA9264-769A-B5CE-EFCB-C49507427D33}|src\\Mo3.Engine\\Mo3.Engine.csproj|solutionrelative:src\\mo3.engine\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\src\\Mo3.App\\App.xaml.cs",
+              "RelativeDocumentMoniker": "src\\Mo3.App\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\src\\Mo3.App\\App.xaml.cs",
+              "RelativeToolTip": "src\\Mo3.App\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:37:39.878Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\src\\Mo3.App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "src\\Mo3.App\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\src\\Mo3.App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "src\\Mo3.App\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:37:38.296Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\tests\\Mo3.Tests\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "tests\\Mo3.Tests\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\tests\\Mo3.Tests\\UnitTest1.cs",
+              "RelativeToolTip": "tests\\Mo3.Tests\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:37:33.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\src\\Mo3.Engine\\Class1.cs",
+              "RelativeDocumentMoniker": "src\\Mo3.Engine\\Class1.cs",
+              "ToolTip": "C:\\Users\\JiriC\\source\\repos\\MO\\MO\\src\\Mo3.Engine\\Class1.cs",
+              "RelativeToolTip": "src\\Mo3.Engine\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T20:37:26.861Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }
