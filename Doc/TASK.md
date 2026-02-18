@@ -6,12 +6,12 @@ Principles:
 - Geography is stubbed: all cities reachable; do NOT add adjacency/map systems.
 
 ## M0 — Solution & scaffolding
-- [ ] Create solution structure:
+- [X] Create solution structure:
       src/Mo3.Engine (classlib)
       src/Mo3.App (WPF)
       tests/Mo3.Tests (xUnit)
-- [ ] Add MVVM helpers to App: ObservableObject + RelayCommand.
-- [ ] Update README with build/test commands.
+- [X] Add MVVM helpers to App: ObservableObject + RelayCommand.
+- [X] Update README with build/test commands.
 
 ## M1 — Core domain model + JSON
 - [ ] Define basic models/enums:
