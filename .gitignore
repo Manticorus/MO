@@ -53,3 +53,12 @@ dkms.conf
 
 # debug information files
 *.dwo
+/src/Mo3.Engine/obj
+/src/Mo3.Engine/bin
+/tests/Mo3.Tests/bin
+/tests/Mo3.Tests/obj
+/.vs
+/.vs
+/.vs
+/.vs
+/.vs
