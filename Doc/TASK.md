@@ -14,21 +14,21 @@ Principles:
 - [X] Update README with build/test commands.
 
 ## M1 — Core domain model + JSON
-- [ ] Define basic models/enums:
+- [X] Define basic models/enums:
       ResourceType, UnitType
       City, Faction, WorldDefinition
       FactionState (resources, units, collapse flag)
       CityState (owner, occupation/vassal flags, garrison strength)
       GameState (turn number, seed, factions, cities, pacts)
-- [ ] JSON schema version field + roundtrip serialization.
-- [ ] Unit test: GameState JSON roundtrip.
+- [X] JSON schema version field + roundtrip serialization.
+- [X] Unit test: GameState JSON roundtrip.
 
 ## M2 — Edict limit + production math
-- [ ] Implement EdictLimitCalculator per rules.
-- [ ] Implement ProductionScaling:
+- [X] Implement EdictLimitCalculator per rules.
+- [X] Implement ProductionScaling:
       allow up to 2*limit
       above limit => half output
-- [ ] Unit tests with a small sample setup.
+- [X] Unit tests with a small sample setup.
 
 ## M3 — Typed edicts + validation layer
 - [ ] Create typed edict models:
