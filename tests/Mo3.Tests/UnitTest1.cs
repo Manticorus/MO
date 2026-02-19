@@ -773,3 +773,304 @@ public class M4TurnResolverRuleFixTests
         Assert.Equal(1, taznar.Resources[ResourceType.Conscripts]);
     }
 }
+
+public class M5BattleResolutionTests
+{
+    [Fact]
+    public void ResolveTurn_BattleTie_DefenderWinsAndAppliesCasualtyRounding()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState
+                {
+                    FactionId = "att",
+                    Units = { [UnitType.Army] = 4 }
+                },
+                new FactionState
+                {
+                    FactionId = "def",
+                    Units = { [UnitType.Army] = 4 }
+                }
+            ],
+            Cities =
+            [
+                new CityState
+                {
+                    CityId = "c1",
+                    OwnerFactionId = "def",
+                    GarrisonStrength = 0
+                }
+            ]
+        };
+
+        var orders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["att"] =
+            [
+                new MilitaryEdict
+                {
+                    IssuingFactionId = "att",
+                    Section = EdictSection.Military,
+                    Type = MilitaryEdictType.Attack,
+                    TargetCityId = "c1",
+                    RequestedArmy = 4
+                }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, orders, 5);
+
+        var city = Assert.Single(state.Cities);
+        Assert.Equal("def", city.OwnerFactionId);
+        Assert.Null(city.OccupyingFactionId);
+
+        var attacker = state.Factions.Single(f => f.FactionId == "att");
+        var defender = state.Factions.Single(f => f.FactionId == "def");
+        Assert.Equal(2, attacker.Units[UnitType.Army]);
+        Assert.Equal(3, defender.Units[UnitType.Army]);
+    }
+
+    [Fact]
+    public void ResolveTurn_DefensivePactAllies_AreAutoCommittedToDefense()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState
+                {
+                    FactionId = "att",
+                    Units = { [UnitType.Army] = 3 }
+                },
+                new FactionState
+                {
+                    FactionId = "def",
+                    Units = { [UnitType.Army] = 0 }
+                },
+                new FactionState
+                {
+                    FactionId = "ally",
+                    Units = { [UnitType.Army] = 4 }
+                }
+            ],
+            Cities =
+            [
+                new CityState
+                {
+                    CityId = "c1",
+                    OwnerFactionId = "def",
+                    GarrisonStrength = 0
+                }
+            ],
+            DefensivePacts =
+            [
+                new DefensivePact
+                {
+                    FactionAId = "def",
+                    FactionBId = "ally"
+                }
+            ]
+        };
+
+        var orders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["att"] =
+            [
+                new MilitaryEdict
+                {
+                    IssuingFactionId = "att",
+                    Section = EdictSection.Military,
+                    Type = MilitaryEdictType.Attack,
+                    TargetCityId = "c1",
+                    RequestedArmy = 3
+                }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, orders, 17);
+
+        var city = Assert.Single(state.Cities);
+        Assert.Equal("def", city.OwnerFactionId);
+        Assert.Null(city.OccupyingFactionId);
+
+        var attacker = state.Factions.Single(f => f.FactionId == "att");
+        var defender = state.Factions.Single(f => f.FactionId == "def");
+        var ally = state.Factions.Single(f => f.FactionId == "ally");
+
+        Assert.Equal(1, attacker.Units[UnitType.Army]);
+        Assert.Equal(0, defender.Units[UnitType.Army]);
+        Assert.Equal(3, ally.Units[UnitType.Army]);
+    }
+
+    [Fact]
+    public void ResolveTurn_AttackerWin_OccupiesByDefaultAndRoundsWinnerCasualtiesUp()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState
+                {
+                    FactionId = "att",
+                    Units = { [UnitType.Army] = 5 }
+                },
+                new FactionState
+                {
+                    FactionId = "def",
+                    Units = { [UnitType.Army] = 1 }
+                }
+            ],
+            Cities =
+            [
+                new CityState
+                {
+                    CityId = "c1",
+                    OwnerFactionId = "def",
+                    GarrisonStrength = 0
+                }
+            ]
+        };
+
+        var orders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["att"] =
+            [
+                new MilitaryEdict
+                {
+                    IssuingFactionId = "att",
+                    Section = EdictSection.Military,
+                    Type = MilitaryEdictType.Attack,
+                    TargetCityId = "c1",
+                    RequestedArmy = 5
+                }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, orders, 22);
+
+        var city = Assert.Single(state.Cities);
+        Assert.Equal("def", city.OwnerFactionId);
+        Assert.Equal("att", city.OccupyingFactionId);
+
+        var attacker = state.Factions.Single(f => f.FactionId == "att");
+        var defender = state.Factions.Single(f => f.FactionId == "def");
+
+        Assert.Equal(3, attacker.Units[UnitType.Army]);
+        Assert.Equal(0, defender.Units[UnitType.Army]);
+    }
+
+    [Fact]
+    public void ResolveTurn_MagesCountAsFivePowerInBattleResolution()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState
+                {
+                    FactionId = "att",
+                    Units = { [UnitType.Mages] = 1 }
+                },
+                new FactionState
+                {
+                    FactionId = "def",
+                    Units = { [UnitType.Army] = 4 }
+                }
+            ],
+            Cities =
+            [
+                new CityState
+                {
+                    CityId = "c1",
+                    OwnerFactionId = "def",
+                    GarrisonStrength = 0
+                }
+            ]
+        };
+
+        var orders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["att"] =
+            [
+                new MilitaryEdict
+                {
+                    IssuingFactionId = "att",
+                    Section = EdictSection.Military,
+                    Type = MilitaryEdictType.Attack,
+                    TargetCityId = "c1",
+                    RequestedMages = 1
+                }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, orders, 30);
+
+        var city = Assert.Single(state.Cities);
+        Assert.Equal("def", city.OwnerFactionId);
+        Assert.Null(city.OccupyingFactionId);
+
+        var attacker = state.Factions.Single(f => f.FactionId == "att");
+        var defender = state.Factions.Single(f => f.FactionId == "def");
+
+        Assert.Equal(0, attacker.Units[UnitType.Mages]);
+        Assert.Equal(3, defender.Units[UnitType.Army]);
+    }
+
+    [Fact]
+    public void ResolveTurn_ElyndarWinner_InflictsFullLossesOnDefender()
+    {
+        var state = new GameState
+        {
+            Factions =
+            [
+                new FactionState
+                {
+                    FactionId = "elyndar",
+                    Units = { [UnitType.Army] = 6 }
+                },
+                new FactionState
+                {
+                    FactionId = "def",
+                    Units = { [UnitType.Army] = 4 }
+                }
+            ],
+            Cities =
+            [
+                new CityState
+                {
+                    CityId = "c1",
+                    OwnerFactionId = "def",
+                    GarrisonStrength = 0
+                }
+            ]
+        };
+
+        var orders = new Dictionary<string, IReadOnlyList<EdictBase>>
+        {
+            ["elyndar"] =
+            [
+                new MilitaryEdict
+                {
+                    IssuingFactionId = "elyndar",
+                    Section = EdictSection.Military,
+                    Type = MilitaryEdictType.Attack,
+                    TargetCityId = "c1",
+                    RequestedArmy = 6
+                }
+            ]
+        };
+
+        TurnResolver.ResolveTurn(state, orders, 31);
+
+        var city = Assert.Single(state.Cities);
+        Assert.Equal("elyndar", city.OccupyingFactionId);
+
+        var attacker = state.Factions.Single(f => f.FactionId == "elyndar");
+        var defender = state.Factions.Single(f => f.FactionId == "def");
+
+        Assert.Equal(4, attacker.Units[UnitType.Army]);
+        Assert.Equal(0, defender.Units[UnitType.Army]);
+    }
+}

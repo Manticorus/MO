@@ -90,6 +90,7 @@ public static class TurnResolver
         CommitMilitaryTroops(state, militaryIntents, logs);
 
         var preparedBattles = PrepareBattles(state, militaryIntents, logs);
+        ResolveBattles(state, militaryIntents, preparedBattles, logs);
         logs.Add($"Military intents collected: {militaryIntents.Count}.");
         logs.Add($"Prepared battles: {preparedBattles.Count}.");
 
@@ -433,6 +434,298 @@ public static class TurnResolver
         }
 
         return battlesByCity.Values.ToList();
+    }
+
+    private static void ResolveBattles(
+        GameState state,
+        IReadOnlyList<MilitaryEdict> militaryIntents,
+        IReadOnlyList<PreparedBattle> preparedBattles,
+        List<string> logs)
+    {
+        if (preparedBattles.Count == 0)
+        {
+            return;
+        }
+
+        var factionById = state.Factions.ToDictionary(f => f.FactionId);
+        var intentsByCity = militaryIntents
+            .Where(i => !string.IsNullOrWhiteSpace(i.TargetCityId))
+            .GroupBy(i => i.TargetCityId!)
+            .ToDictionary(g => g.Key, g => g.ToList());
+
+        var remainingByFaction = state.Factions.ToDictionary(
+            faction => faction.FactionId,
+            faction => new Dictionary<UnitType, int>
+            {
+                [UnitType.Army] = Math.Max(0, faction.Units.GetValueOrDefault(UnitType.Army) - militaryIntents.Where(e => e.IssuingFactionId == faction.FactionId).Sum(e => e.CommittedArmy)),
+                [UnitType.Fleet] = Math.Max(0, faction.Units.GetValueOrDefault(UnitType.Fleet) - militaryIntents.Where(e => e.IssuingFactionId == faction.FactionId).Sum(e => e.CommittedFleet)),
+                [UnitType.Mages] = Math.Max(0, faction.Units.GetValueOrDefault(UnitType.Mages) - militaryIntents.Where(e => e.IssuingFactionId == faction.FactionId).Sum(e => e.CommittedMages))
+            });
+
+        foreach (var battle in preparedBattles.OrderBy(b => b.TargetCityId, StringComparer.Ordinal))
+        {
+            var city = state.Cities.First(c => c.CityId == battle.TargetCityId);
+            var cityIntents = intentsByCity.GetValueOrDefault(battle.TargetCityId) ?? [];
+            var primaryAttacks = battle.Attacks
+                .Where(a => a.OperationType is MilitaryEdictType.Attack or MilitaryEdictType.Takeover or MilitaryEdictType.Liberation)
+                .ToList();
+
+            if (primaryAttacks.Count == 0)
+            {
+                logs.Add($"Battle {battle.TargetCityId}: no primary attacks submitted.");
+                continue;
+            }
+
+            var supportForFaction = cityIntents
+                .Where(i => i.Type == MilitaryEdictType.SupportAttack && !string.IsNullOrWhiteSpace(i.SupportedFactionId))
+                .GroupBy(i => i.SupportedFactionId!, StringComparer.Ordinal)
+                .ToDictionary(g => g.Key, g => g.ToList(), StringComparer.Ordinal);
+
+            var attackCandidates = primaryAttacks.Select(primary =>
+            {
+                var contributors = new List<BattleContributor>
+                {
+                    new(primary.AttackerFactionId, primary.CommittedArmy, primary.CommittedFleet, primary.CommittedMages)
+                };
+
+                if (supportForFaction.TryGetValue(primary.AttackerFactionId, out var supports))
+                {
+                    contributors.AddRange(supports.Select(s => new BattleContributor(
+                        s.IssuingFactionId,
+                        s.CommittedArmy,
+                        s.CommittedFleet,
+                        s.CommittedMages)));
+                }
+
+                return new AttackCandidate(primary, contributors);
+            }).ToList();
+
+            var bestAttackPower = attackCandidates.Max(a => ComputeTotalPower(a.Contributors));
+            var bestAttackers = attackCandidates.Where(a => ComputeTotalPower(a.Contributors) == bestAttackPower).ToList();
+            if (bestAttackers.Count > 1)
+            {
+                logs.Add($"Battle {battle.TargetCityId}: multiple strongest attackers tied; defender holds.");
+                continue;
+            }
+
+            var bestAttack = bestAttackers[0];
+            var attackerPower = ComputeTotalPower(bestAttack.Contributors);
+            var attackerUnits = ComputeTotalUnits(bestAttack.Contributors);
+
+            var defenderContributors = MobilizeDefenders(
+                state,
+                battle.DefenderFactionId,
+                attackerPower,
+                remainingByFaction,
+                logs,
+                battle.TargetCityId);
+
+            var defenderMilitaryPower = ComputeTotalPower(defenderContributors);
+            var defenderMilitaryUnits = ComputeTotalUnits(defenderContributors);
+            var defenderTotalPower = battle.DefenderGarrisonStrength + defenderMilitaryPower;
+            var defenderWins = defenderTotalPower >= attackerPower;
+
+            if (defenderWins)
+            {
+                var attackerCasualtyCount = (int)Math.Ceiling(attackerUnits * 0.5m);
+                ApplyCasualtiesToContributors(factionById, bestAttack.Contributors, attackerCasualtyCount, logs);
+
+                var defenderCasualtyCount = (int)Math.Ceiling(defenderMilitaryUnits * 0.25m);
+                ApplyCasualtiesToContributors(factionById, defenderContributors, defenderCasualtyCount, logs);
+
+                logs.Add($"Battle {battle.TargetCityId}: defender {battle.DefenderFactionId} wins (def {defenderTotalPower} vs atk {attackerPower}).");
+                continue;
+            }
+
+            var attackerWinnerCasualtyCount = (int)Math.Ceiling(attackerUnits * 0.25m);
+            ApplyCasualtiesToContributors(factionById, bestAttack.Contributors, attackerWinnerCasualtyCount, logs);
+
+            var losingDefenderRate = HasElyndar(bestAttack.Contributors) ? 1m : 0.5m;
+            var defenderLoserCasualtyCount = (int)Math.Ceiling(defenderMilitaryUnits * losingDefenderRate);
+            ApplyCasualtiesToContributors(factionById, defenderContributors, defenderLoserCasualtyCount, logs);
+
+            if (bestAttack.PrimaryAttack.OperationType == MilitaryEdictType.Takeover)
+            {
+                city.OwnerFactionId = bestAttack.PrimaryAttack.AttackerFactionId;
+                city.OccupyingFactionId = null;
+                logs.Add($"Battle {battle.TargetCityId}: takeover by {bestAttack.PrimaryAttack.AttackerFactionId}.");
+            }
+            else if (bestAttack.PrimaryAttack.OperationType == MilitaryEdictType.Liberation)
+            {
+                city.OccupyingFactionId = null;
+                logs.Add($"Battle {battle.TargetCityId}: liberation by {bestAttack.PrimaryAttack.AttackerFactionId}.");
+            }
+            else
+            {
+                city.OccupyingFactionId = bestAttack.PrimaryAttack.AttackerFactionId;
+                logs.Add($"Battle {battle.TargetCityId}: occupation by {bestAttack.PrimaryAttack.AttackerFactionId}.");
+            }
+        }
+    }
+
+    private sealed record BattleContributor(string FactionId, int Army, int Fleet, int Mages)
+    {
+        public int TotalUnits => Army + Fleet + Mages;
+
+        public int CombatPower => Army + Fleet + (Mages * 5);
+    }
+
+    private sealed record AttackCandidate(PreparedBattleAttack PrimaryAttack, List<BattleContributor> Contributors);
+
+    private static int ComputeTotalUnits(IEnumerable<BattleContributor> contributors)
+    {
+        return contributors.Sum(c => c.TotalUnits);
+    }
+
+    private static int ComputeTotalPower(IEnumerable<BattleContributor> contributors)
+    {
+        return contributors.Sum(c => c.CombatPower);
+    }
+
+    private static bool HasElyndar(IEnumerable<BattleContributor> contributors)
+    {
+        return contributors.Any(c => c.FactionId == "elyndar");
+    }
+
+    private static List<BattleContributor> MobilizeDefenders(
+        GameState state,
+        string defenderFactionId,
+        int targetPower,
+        Dictionary<string, Dictionary<UnitType, int>> remainingByFaction,
+        List<string> logs,
+        string targetCityId)
+    {
+        var contributors = new List<BattleContributor>();
+        var powerSoFar = 0;
+
+        foreach (var factionId in new[] { defenderFactionId }.Concat(GetDefensiveAllies(state, defenderFactionId)))
+        {
+            if (powerSoFar >= targetPower)
+            {
+                break;
+            }
+
+            if (!remainingByFaction.TryGetValue(factionId, out var available))
+            {
+                continue;
+            }
+
+            var mobilizedArmy = 0;
+            var mobilizedFleet = 0;
+            var mobilizedMages = 0;
+
+            while (powerSoFar < targetPower && available[UnitType.Army] > 0)
+            {
+                available[UnitType.Army]--;
+                mobilizedArmy++;
+                powerSoFar++;
+            }
+
+            while (powerSoFar < targetPower && available[UnitType.Fleet] > 0)
+            {
+                available[UnitType.Fleet]--;
+                mobilizedFleet++;
+                powerSoFar++;
+            }
+
+            while (powerSoFar < targetPower && available[UnitType.Mages] > 0)
+            {
+                available[UnitType.Mages]--;
+                mobilizedMages++;
+                powerSoFar += 5;
+            }
+
+            if (mobilizedArmy + mobilizedFleet + mobilizedMages <= 0)
+            {
+                continue;
+            }
+
+            contributors.Add(new BattleContributor(factionId, mobilizedArmy, mobilizedFleet, mobilizedMages));
+            logs.Add($"Battle {targetCityId}: {factionId} auto-defends with A:{mobilizedArmy} F:{mobilizedFleet} M:{mobilizedMages}.");
+        }
+
+        return contributors;
+    }
+
+    private static void ApplyCasualtiesToContributors(
+        IReadOnlyDictionary<string, FactionState> factionById,
+        IReadOnlyList<BattleContributor> contributors,
+        int casualtyCount,
+        List<string> logs)
+    {
+        var casualtiesLeft = casualtyCount;
+
+        foreach (var contributor in contributors)
+        {
+            if (casualtiesLeft <= 0)
+            {
+                break;
+            }
+
+            if (!factionById.TryGetValue(contributor.FactionId, out var faction))
+            {
+                continue;
+            }
+
+            var contributorUnitsLeft = contributor.TotalUnits;
+            if (contributorUnitsLeft <= 0)
+            {
+                continue;
+            }
+
+            var contributorCasualties = Math.Min(contributorUnitsLeft, casualtiesLeft);
+            casualtiesLeft -= contributorCasualties;
+            ApplyTotalCasualties(faction, contributorCasualties, logs);
+        }
+    }
+
+    private static IEnumerable<string> GetDefensiveAllies(GameState state, string defenderFactionId)
+    {
+        return state.DefensivePacts
+            .SelectMany(pact =>
+            {
+                if (pact.FactionAId == defenderFactionId)
+                {
+                    return new[] { pact.FactionBId };
+                }
+
+                if (pact.FactionBId == defenderFactionId)
+                {
+                    return new[] { pact.FactionAId };
+                }
+
+                return Array.Empty<string>();
+            })
+            .Distinct(StringComparer.Ordinal);
+    }
+
+    private static void ApplyTotalCasualties(FactionState faction, int casualties, List<string> logs)
+    {
+        if (casualties <= 0)
+        {
+            return;
+        }
+
+        var remaining = casualties;
+        foreach (var unitType in new[] { UnitType.Army, UnitType.Fleet, UnitType.Mages })
+        {
+            if (remaining <= 0)
+            {
+                break;
+            }
+
+            var available = faction.Units.GetValueOrDefault(unitType);
+            if (available <= 0)
+            {
+                continue;
+            }
+
+            var loss = Math.Min(available, remaining);
+            faction.Units[unitType] = available - loss;
+            remaining -= loss;
+        }
+
+        logs.Add($"Casualties: {faction.FactionId} loses {casualties - remaining} unit(s).");
     }
 
     private static List<string> ShuffleFactions(IEnumerable<string> factionIds, int seed)
