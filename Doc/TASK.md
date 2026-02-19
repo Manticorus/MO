@@ -52,7 +52,7 @@ Principles:
 - [X] Unit test: deterministic output with fixed seed.
 
 ## M5 — Military resolution + battles (NO geography restrictions)
-- [ ] Implement battle resolution:
+- [X] Implement battle resolution:
       - collect attacks & supports
       - defender auto-mobilization
       - tie -> defender wins
@@ -60,9 +60,9 @@ Principles:
           winner loses ceil(deployed/4)
           loser loses ceil(deployed/2)
       - outcomes: occupation (default), takeover, liberation
-- [ ] Implement ally support on defense (MVP rule):
+- [X] Implement ally support on defense (MVP rule):
       - if defender has defensive pact allies, auto-commit ally forces (subject to availability)
-- [ ] Unit tests for: tie behavior, casualty rounding, ally support included.
+- [X] Unit tests for: tie behavior, casualty rounding, ally support included.
 
 ## M6 — Recruitment step
 - [ ] Implement “no military edicts this turn” check.
